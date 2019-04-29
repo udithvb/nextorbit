@@ -43,6 +43,6 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "uikit": "^3.0.2"
+    "uikit": "^3.1.2"
   }
 }

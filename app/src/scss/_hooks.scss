@@ -16,3 +16,195 @@
     
 }
 */
+$modifications: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    warning: $warning,
+    muted: $muted,
+    info: $info,
+    danger: $danger,
+    default: $dark,
+);
+
+@mixin hook-button () {
+
+    border-radius: 50rem;
+    font-size: 14px;
+    font-weight: $font-weight-strong;
+    min-width: 165px;
+    padding: 6px 30px;
+
+    &.uk-button-raised {
+        box-shadow: 0px 2px 11px 4px rgba(202,202,202,0.5)
+    }
+
+    &.uk-button-inverse {
+        color: $dark;
+        background: $light;
+        border: none;
+
+        @each $key,$color in $modifications  {
+            &.uk-button-#{$key} {
+                color: $color;
+
+                &:hover {
+                    color: darken($color, 15%);
+                }
+            }
+        }
+    }
+
+    &.uk-button-outline {
+
+        background: none;
+        border: 2px solid $dark;
+        color: $global-emphasis-color;
+
+        &:hover {
+            color: $light;
+        }
+
+        @each $key,$color in $modifications  {
+            &.uk-button-#{$key} {
+                border-color: $color;
+                color: $color;
+
+                &:hover {
+                    color: $light;
+                    background: $color;
+                }
+            }
+        }
+    }
+}
+
+// navbar
+
+@mixin hook-navbar-item () {
+
+    &.uk-logo {
+        font-family: 'Nunito', sans-serif !important;
+        font-size: 26px;
+    }
+}
+
+@mixin hook-navbar-nav-item () {
+
+    text-transform: none;
+    font-size: $global-font-size;
+}
+
+// section
+
+@mixin hook-section () {
+    
+    &.uk-section-tertiary {
+        background: $tertiary
+    }
+
+    &.uk-section-tilt {
+
+        position: relative;
+
+        $modifications_tilt: (
+            primary: $primary,
+            secondary: $secondary,
+            success: $success,
+            warning: $warning,
+            muted: $muted,
+            info: $info,
+            danger: $danger,
+            default: $light,
+        );
+
+        @each $key, $color in $modifications_tilt{
+            &.uk-section-#{$key} {
+                &::before {
+                    content: '';
+                    display: block;
+                    z-index: 1;
+                    position: absolute;
+                    @include svg-fill($tilted-section-shape, '#000', $color);
+                    width: 100%;
+                    height: 0px;
+                    padding-top: 3%;
+                    background-size: cover;
+                    top: 0px;
+                    transform: translateY(-99.99%);
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
+
+// card
+
+@mixin hook-card-misc () {
+
+    .uk-card-tint {
+        border-left: 12px solid $dark;
+
+        @each $key, $color in $modifications{
+            &.uk-card-#{$key} {
+                background: $light;
+                color: $global-emphasis-color;
+                border-color: $color;
+            }
+        }
+    }
+
+}
+
+@mixin hook-card () {
+    border-radius: $global-border-radius;
+}
+
+@mixin hook-card-title () {
+
+    font-weight: $font-weight-strong;
+}
+
+// List
+
+@mixin hook-list-bullet () {
+
+    border-radius: 50rem;
+    background: #C3E5EA;
+    width: 9px;
+    height: 9px;
+    top: calc(50% - 4.5px);
+    left: 4.5px;
+}
+
+// tile 
+
+@mixin hook-tile() {
+    border-radius: $global-border-radius;
+    
+}
+
+// header
+@mixin hook-header-misc () {
+
+    $heading-mini-font-size-m: $heading-mini-font-size-l*0.875;
+    $heading-mini-font-size: $heading-mini-font-size-m*8;
+
+    .uk-heading-mini {
+        font-size: $heading-mini-font-size;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+
+        .uk-heading-mini{ font-size: $heading-mini-font-size-m; }
+    
+    }
+    
+    /* Laptop and bigger */
+    @media (min-width: $breakpoint-large) {
+    
+        .uk-heading-mini { font-size: $heading-mini-font-size-l; }
+    
+    }
+}

@@ -2,51 +2,26 @@
 
 {% block content %}
 
-    <div class="uk-flex uk-flex-column vh-100">
+    <div id="bodyWrapper">
 
+        {# Navbar #}
         {% import "macros/navbar.macro.njk" as navbar %}
         {{ navbar.nav(app, 'home') }}
 
-        <div class="uk-container uk-margin-auto-vertical uk-text-center">
-            
-            <div class="uk-heading-hero">Welcome!</div>
-            <div class="uk-margin-medium-top">
-                <div class="uk-text-lead uk-text-muted">This is a starter page setup for your Jigsaw project. Start editing <span class="uk-text-primary">index.njk</span> to get started.</div>
-            </div>
-            
-            <div class="uk-margin-large-top">
-                <a href="https://github.com/tracingpaper/mosaic" class="uk-button uk-button-primary uk-button-large"><i uk-icon="icon: github" class="uk-margin-right"></i> View in Github</a>
-            </div>
+        {# Hero #}
+        {% include "sections/hero.section.njk" %}
 
-        </div>
+        {# About #}
+        {% include "sections/about.section.njk" %}
 
-        <div class="uk-section uk-section-muted">
-            <div class="uk-container">
-                <div uk-grid>
+        {# Features #}
+        {% include "sections/features.section.njk" %}
 
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://mozilla.github.io/nunjucks/getting-started.html" class="uk-link-muted uk-padding-small">
-                            <i class="fa fa-book"></i>  Read Nunjucks Docs
-                        </a>
-                    </div>
-
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://sass-lang.com/guide" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-sass"></i>  Read Sass Docs
-                        </a>
-                    </div>
-
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://getuikit.com/docs/" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-uikit"></i>  Read UIKit Docs
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        {# Benefits #}
+        {% include "sections/benefits.section.njk" %}
 
         {% include "partials/footer.partial.njk" %}
-    
+
     </div>
+
 {% endblock %}

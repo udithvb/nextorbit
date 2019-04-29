@@ -1,0 +1,24 @@
+<div class="uk-section uk-section-default uk-section-tilt uk-padding-remove-top">
+
+    <div class="uk-container uk-text-center">
+
+        <h2 class="uk-heading-small text-light uk-margin-medium-bottom">Benefits</h2>
+
+        <div class="uk-grid-large" uk-grid>
+
+            {% for benefit in data.benefits %}
+                <div class="uk-width-1-2 uk-width-1-4@m uk-text-center">
+                    <img class="svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/{{benefit.icon}}">
+                    <div class="uk-margin-top text-bold caption uk-margin-top" title="{{benefit.text}}">
+                        {{benefit.text}}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <a href="#" class="uk-button uk-button-primary uk-margin-large-top uk-button-raised">
+            Get Started
+        </a>
+    </div>
+
+</div>

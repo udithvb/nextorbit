@@ -9,17 +9,19 @@
 */
 
 // COLORS //
-$primary:   #34D18E;
-$secondary: #0B172A;
+$primary:   #229DCA;
+$secondary: #375091;
+$tertiary: #f0f0f0;
 
 $success:   #8bc34a;
 $warning:   #ffc107;
-$danger :   #f44336;
-$muted  :   #f8f8f8;
+$danger :   #F66879;
+$muted  :   #E5F0F6;
+$info   :   #41BEE2;
 
-$dark   :   #2e2e2e;
+$dark   :   #363C44;
 $gray   :   #666;
-$light  :   #f4f4f4;
+$light  :   #ffffff;
 
 // OVERRIDES //
 $global-primary-background: $primary;
@@ -37,8 +39,28 @@ $global-color: $gray;
 $global-emphasis-color: $dark;
 $global-inverse-color: $light;
 
-$global-font-family: 'Poppins', 'Roboto', sans-serif;
-$global-font-size: 15px;
+$global-font-family: "HelveticaNeue-Light", /*"Helvetica Neue Light", "Helvetica Neue", Helvetica,*/ 'Lato', sans-serif;
+$global-font-size: 14px;
+
+// border radius
+$global-border-radius: 0.5rem;
+
+// extra
+
+$heading-medium-font-size-l: 3.25rem;
+$heading-mini-font-size-l: 1.65rem;
+
+// cards
+$card-title-font-size: 20px;
+
+
 // => Add your own theming variables below //
 
+$font-weight-strong: 600;
+
+// tilted sections
+$tilted-section-shape: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpolygon%20fill%3D%22#000%22%20points%3D%220%2C0%201000%2C30%200%2C30%22/%3E%3C/svg%3E";
+
+
 // (x) Donot write custom styling here //
+

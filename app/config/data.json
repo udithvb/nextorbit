@@ -3,5 +3,43 @@
         "facebook": "tracingpaperofficial",
         "instagram": "tracingpaperofficial",
         "twitter": "tracingpaperz"
-    }
+    },
+    "assets": {
+        "images": "assets/images",
+        "icons": "assets/icons"
+    },
+    "benefits": [
+        {
+            "icon": "bfpst.svg",
+            "text": "Better Full Price sell through"
+        },
+        {
+            "icon": "wco.svg",
+            "text": "Working capital optimization"
+        },
+        {
+            "icon": "hosa.svg",
+            "text": "Higher On Shelf Availability"
+        },
+        {
+            "icon": "hbs.svg",
+            "text": "Higher Basket Sizes"
+        },
+        {
+            "icon": "hclrv.svg",
+            "text": "Higher Customer Loyalty & Repeat Visits"
+        },
+        {
+            "icon": "hit.svg",
+            "text": "Higher Inventory Turns"
+        },
+        {
+            "icon": "lsdci.svg",
+            "text": "Lower Store or DC Inventory"
+        },
+        {
+            "icon": "mep.svg",
+            "text": "More Effective Planning"
+        }
+    ]
 }
