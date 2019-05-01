@@ -1,0 +1,165 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    display: inline-block
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-lead-small {
+    font-size: 1.15rem;
+    // line-height: 1.125;
+}
+
+
+.raised {
+    box-shadow: 0px 2px 11px 4px rgba(202,202,202,0.5)
+}
+
+.caption {
+    font-size: 1.285rem;
+    padding: 0 1.5rem;
+}
+
+#features, #how_it_works, #pricing, #team {
+    padding-top: 30px;
+}
+
+#pricing, #team {
+    padding-bottom: 30px;
+}
+
+#navbar {
+    background: $light
+}
+
+/* =============
+ COIN TILE
+============= */
+.coin-tile {
+    padding: 15px;
+    border-radius: $global-border-radius;
+    box-shadow: 0 2px 4px 0 rgba(202, 202, 202, 0.5);
+    background: $light;
+}
+
+/* =============
+ SVG ICON
+============= */
+.svg-icon {
+    width: 100px;
+    height: 100px;
+
+    &.small {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*============
+    SITE
+===========*/
+
+#parallax-shape {
+    position: relative;
+    height: 280px;
+    width: 165px;
+    margin: auto;
+
+    * {
+        position: absolute;
+    }
+
+    .shape-base {
+        width: 151px;
+        bottom: 26px;
+        left: 0px;
+        z-index: 12;
+    }
+
+    .shape-cube {
+        width: 38.5px;
+        right: 0;
+        bottom: 0;
+        z-index: 14;
+    }
+
+    .shape-loading {
+        width: 49px;
+        left: 74px;
+        bottom: 185px;
+        z-index: 13;
+    }
+
+    .shape-round {
+        width: 16.5px;
+        left: 40px;
+        bottom: 185px;
+        z-index: 11;
+    }
+}
+
+/// How it works
+
+#hiw-switches {
+    width: 300px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 2.3rem 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 0;
+        width: 90%;
+        left: 5%;
+        top: calc(50% - 3px);
+        height: 3px;
+        background: $tint;
+    }
+
+    .switch {
+        cursor: pointer;
+        font-size: 20px;
+        width: 12px;
+        height: 12px;
+        line-height: 12px;
+        vertical-align: middle;
+        padding: 16px;
+        border-radius: 50rem;
+        text-align: middle;
+        background: $light;
+        z-index: 2;
+
+        &.uk-active {
+            position: relative;
+            color: $light;
+            background: $primary;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 52px;
+                height: 52px;
+                position: absolute;
+                z-index: 0;
+                background: transparent;
+                border: 3px solid $tint;
+                left: -7px;
+                top: -7px;
+                border-radius: 50rem;
+            }
+        }
+    }
+}

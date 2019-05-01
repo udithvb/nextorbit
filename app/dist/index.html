@@ -42,48 +42,50 @@
         
         
         
-<nav class="uk-navbar-container uk-container uk-navbar-transparent" uk-navbar="mode: click">
-    <div class="uk-navbar-left">
-        <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-padding-remove">
-            <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
-        </a>
-        <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-logo uk-text-secondary uk-visible@m">
-            NextOrbit
-        </a>
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="navbar">
+    <nav class="uk-navbar-container uk-container uk-navbar-transparent uk-navbar-fixed" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-padding-remove">
+                <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
+            </a>
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-logo uk-text-secondary uk-visible@m">
+                NextOrbit
+            </a>
 
-    </div>
-
-    <div class="uk-navbar-right">
-
-        <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#features">Features</a>
-            </li>
-            <li>
-                <a href="#benefits">Benefits</a>
-            </li>
-            <li>
-                <a href="#how_it_works">How It Works</a>
-            </li>
-            <li>
-                <a href="#team">Team</a>
-            </li>
-            <li>
-                <a href="#blog">Blog</a>
-            </li>
-        </ul>
-
-        <div class="uk-navbar-item">
-            <button href="#contact" class="uk-button uk-button-outline uk-button-primary">
-                Contact Us
-            </button>
         </div>
-        
-    </div>
-</nav>
+
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true;offset:80">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#benefits">Benefits</a>
+                </li>
+                <li>
+                    <a href="#how_it_works">How It Works</a>
+                </li>
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+            </ul>
+
+            <div class="uk-navbar-item">
+                <button href="#contact" class="uk-button uk-button-outline uk-button-primary">
+                    Contact Us
+                </button>
+            </div>
+            
+        </div>
+    </nav>
+</div>
 
         
         <div class="uk-section uk-flex uk-flex-middle" id="hero" uk-height-viewport="offset-top: true">
@@ -112,23 +114,28 @@
 </div>
 
         
-        <div class="uk-section uk-section-secondary uk-preserve-color">
+        <div class="uk-section uk-section-secondary uk-preserve-color" id="about">
     <div class="uk-container uk-text-center uk-light">
         <div class="uk-grid-large uk-flex-middle" uk-grid>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex-last@m">
-            
+            <div class="uk-width-1-1 uk-width-1-2@m uk-flex">
+                <div id="parallax-shape">
+                    <img class="shape-base" src="assets/images/parallax_shape/base.svg">
+                    <img class="shape-cube" src="assets/images/parallax_shape/cube.svg" uk-parallax="y:-80; opacity:0.6,1">
+                    <img class="shape-loading" src="assets/images/parallax_shape/loading.svg" uk-parallax="y:50;x:-30; opacity:0.8,1">
+                    <img class="shape-round" src="assets/images/parallax_shape/round.svg"uk-parallax="y:80;x:-50; opacity:1,0.2">
+                </div>
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-text-right@m">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-text-right@m uk-flex-first@m">
                 <h2 class="uk-heading-small text-light">Nextorbit Platform</h2>
                 <p class="text-lead-small">
                     NextOrbit is a Cloud Based SAAS platform that enables Retailers to strengthen operational decision-making, support high growth and enhance great customer experience using Artificial Intelligence and Machine Learning. 
                 </p>
             </div>
-        </div>
-        <div class="uk-padding-small uk-text-right@m">
-            <button class="uk-button uk-button-inverse uk-button-secondary">
-                Get Started
-            </button>
+            <div class="uk-margin-auto-left uk-width-1-1 uk-width-1-2@m">
+                <button class="uk-button uk-button-inverse uk-button-secondary">
+                    Get Started
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -140,7 +147,7 @@
 
         <div class="uk-grid-large uk-flex-middle" uk-grid>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large@m">
 
                 <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger raised">
                     <div uk-grid>
@@ -149,9 +156,8 @@
                         </div>
                         <div class="uk-width-expand uk-text-left">
                             <h3 class="uk-card-title">Intelligent Demand Planning</h3>
-                            <p class="text-light uk-text-small">
-                                <span class="line">Machine Learning and Human Judgement - we help</span> 
-                                <span class="line">Combine the best of both the worlds.</span>
+                            <p class="text-light">
+                                <span class="line uk-text-justify">Machine Learning and Human Judgement - we help combine the best of both the worlds.</span>
                                 <ul class="uk-list uk-list-bullet text-light uk-text-small">
                                     <li>Demand Planning</li>
                                     <li>Store Ordering</li>
@@ -194,7 +200,7 @@
 </div>
 
         
-        <div class="uk-section uk-section-default uk-section-tilt uk-padding-remove-top">
+        <div class="uk-section uk-section-default uk-section-tilt uk-padding-remove-top" id="benefits">
 
     <div class="uk-container uk-text-center">
 
@@ -269,6 +275,182 @@
 </div>
 
         
+        <div class="uk-section uk-section-tertiary" id="how_it_works">
+    <div class="uk-container uk-text-center">
+        <h2 class="uk-heading-small text-light uk-margin-remove-bottom">How It Works</h2>
+
+        <div id="hiw-switches" uk-switcher="connect: .how-it-works-switcher; toggle: > a; animation: uk-animation-fade;">
+            <a class="switch">1</a>
+            <a class="switch">2</a>
+            <a class="switch">3</a>
+        </div>
+
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-1-1 uk-width-1-2@m">
+                <ul class="uk-switcher how-it-works-switcher">
+                    <li>
+                        <div class="uk-placeholder">
+                            <i class="fas fa-database uk-text-large"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-placeholder">
+                            <i class="fas fa-image uk-text-large"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-placeholder">
+                            <i class="fas fa-image uk-text-large"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-width-1-1 uk-width-1-2@m">
+                <ul class="uk-switcher how-it-works-switcher">
+                    <li>
+                        <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger raised">
+    <div uk-grid>
+        <div class="uk-width-auto">
+            <div class="svg-icon small"></div>
+        </div>
+        <div class="uk-width-expand uk-text-left">
+            <h3 class="uk-card-title">It Starts with Collecting Data</h3>
+            <p class="text-light">
+                <span class="line uk-text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio nemo quod ad labore sit et magni fugiat. Tempore illo dolore aspernatur ipsam! Inventore, ea!</span> 
+            </p>
+            
+        </div>
+    </div>
+</div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger raised">
+    <div uk-grid>
+        <div class="uk-width-auto">
+            <div class="svg-icon small"></div>
+        </div>
+        <div class="uk-width-expand uk-text-left">
+            <h3 class="uk-card-title">Platform On the Cloud</h3>
+            <p class="text-light">
+                <span class="line uk-text-justify">Once the data is collected, NextOrbit with its properitory algorithms constantly learning, do the process of</span> 
+                <ul class="uk-list uk-list-bullet text-light uk-text-small">
+                    <li>Complex Event Processing Time Series</li>
+                    <li>Performance Classification</li>
+                    <li>Knowledge Mining</li>
+                    <li>Pattern Recognition</li>
+                    <li>Continous Learning And Adapting</li>
+                </ul>
+            </p>
+            
+        </div>
+    </div>
+</div>
+                    </li>
+                    <li>
+                        <div class="uk-placeholder">Lorem Ipsum</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-margin-auto-left uk-width-1-1 uk-width-1-2@m">
+                <div class="uk-button uk-button-outline uk-button-primary">Request Demo</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <div class="uk-section uk-section-light" id="team">
+    <div class="uk-container uk-text-center">
+        <h2 class="uk-heading-small text-light uk-margin-medium-bottom">Our Team</h2>
+
+        <div class="uk-grid-small" uk-grid>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            
+                <div class="uk-width-1-2 uk-width-1-5@m">
+                    <div class="uk-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                    
+        </div>
+
+        <div class="uk-padding-small uk-margin-large-top">
+            <div class="uk-button uk-button-primary">Join Us</div>
+        </div>
+    </div>
+</div>   
+
+        
+        <div class="uk-section uk-section-muted" id="pricing" uk-height-viewport="offset-bottom: 250px;">
+    <div class="uk-container uk-text-center">
+
+        <h2 class="uk-heading-small text-light uk-margin-remove-bottom">Platform Price</h2>
+
+    </div>
+</div>
+
+        
+        <div class="uk-section uk-section-default uk-padding-remove" id="footer">
+
+    <div class="uk-section uk-padding-small uk-text-center">
+        <span class="text-bold">&copy; 2019 NextOrbit</span>
+    </div>
+</div>
 
     </div>
 

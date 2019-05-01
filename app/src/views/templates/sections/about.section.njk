@@ -1,20 +1,25 @@
-<div class="uk-section uk-section-secondary uk-preserve-color">
+<div class="uk-section uk-section-secondary uk-preserve-color" id="about">
     <div class="uk-container uk-text-center uk-light">
         <div class="uk-grid-large uk-flex-middle" uk-grid>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex-last@m">
-            
+            <div class="uk-width-1-1 uk-width-1-2@m uk-flex">
+                <div id="parallax-shape">
+                    <img class="shape-base" src="{{data.assets.images}}/parallax_shape/base.svg">
+                    <img class="shape-cube" src="{{data.assets.images}}/parallax_shape/cube.svg" uk-parallax="y:-80; opacity:0.6,1">
+                    <img class="shape-loading" src="{{data.assets.images}}/parallax_shape/loading.svg" uk-parallax="y:50;x:-30; opacity:0.8,1">
+                    <img class="shape-round" src="{{data.assets.images}}/parallax_shape/round.svg"uk-parallax="y:80;x:-50; opacity:1,0.2">
+                </div>
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-text-right@m">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-text-right@m uk-flex-first@m">
                 <h2 class="uk-heading-small text-light">Nextorbit Platform</h2>
                 <p class="text-lead-small">
                     NextOrbit is a Cloud Based SAAS platform that enables Retailers to strengthen operational decision-making, support high growth and enhance great customer experience using Artificial Intelligence and Machine Learning. 
                 </p>
             </div>
-        </div>
-        <div class="uk-padding-small uk-text-right@m">
-            <button class="uk-button uk-button-inverse uk-button-secondary">
-                Get Started
-            </button>
+            <div class="uk-margin-auto-left uk-width-1-1 uk-width-1-2@m">
+                <button class="uk-button uk-button-inverse uk-button-secondary">
+                    Get Started
+                </button>
+            </div>
         </div>
     </div>
 </div>
