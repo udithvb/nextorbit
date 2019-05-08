@@ -1,3 +1,17 @@
+//// MIXINS
+
+@mixin coin-tile () {
+    padding: 15px;
+    border-radius: $global-border-radius;
+    box-shadow: 0 2px 4px 0 rgba(202, 202, 202, 0.5);
+    background: $light;
+}
+
+@mixin raised () {
+    box-shadow: 0px 2px 11px 4px rgba(202,202,202,0.5)
+}
+
+///// STYLES
 html, body {
     width: 100%;
     height: 100%;
@@ -22,7 +36,7 @@ html, body {
 
 
 .raised {
-    box-shadow: 0px 2px 11px 4px rgba(202,202,202,0.5)
+    @include raised();
 }
 
 .caption {
@@ -46,10 +60,7 @@ html, body {
  COIN TILE
 ============= */
 .coin-tile {
-    padding: 15px;
-    border-radius: $global-border-radius;
-    box-shadow: 0 2px 4px 0 rgba(202, 202, 202, 0.5);
-    background: $light;
+    @include coin-tile();
 }
 
 /* =============
@@ -163,3 +174,41 @@ html, body {
         }
     }
 }
+
+#feat_idm, #feat_ip {
+
+    transition: all 0.3s ease-in-out;
+    @include raised();
+
+    .feat-list {
+        animation: uk-fade-top-small 0.4s ease-in;
+    }
+
+    .feat-text {
+        font-weight: 300;
+    }
+
+    &.closed {
+        background: transparent;
+        border: none;
+        box-shadow: none !important;
+
+        .feat-list {
+            display: none;
+        }
+
+        .feat-icon {
+            @include coin-tile();
+            cursor: pointer;
+        }
+
+        .feat-text {
+            font-weight: 400;
+        }
+
+        [uk-grid] {
+            align-items: center;
+        }
+    }
+}
+
