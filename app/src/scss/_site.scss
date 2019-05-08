@@ -80,6 +80,16 @@ html, body {
     SITE
 ===========*/
 
+
+#navbar {
+
+    .uk-logo {
+        color: $dark;
+    }
+}
+
+
+
 #parallax-shape {
     position: relative;
     height: 280px;
@@ -212,3 +222,24 @@ html, body {
     }
 }
 
+//// FOOTER
+#footer {
+
+    h5 {
+        color: #3D3D3D;
+    }
+
+    // .footer-nav
+    .footer-nav {
+
+        li a {
+            font-size: 1rem;
+            font-weight: $font-weight-strong;
+            color: #6F7076;
+
+            &:hover, &.active {
+                color: $dark;
+            }
+        }
+    }
+}
