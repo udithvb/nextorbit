@@ -208,3 +208,11 @@ $modifications: (
     
     }
 }
+
+
+//// DOTNAV ////////////////////////
+
+@mixin hook-inverse-dotnav-item() {
+
+    border: none;
+}

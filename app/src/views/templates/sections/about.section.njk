@@ -1,6 +1,6 @@
 <div class="uk-section uk-section-secondary uk-preserve-color" id="about">
     <div class="uk-container uk-text-center uk-light">
-        <div class="uk-grid-large uk-flex-middle" uk-grid>
+        <div class="uk-grid-large" uk-grid>
             <div class="uk-width-1-1 uk-width-1-2@m uk-flex">
                 <div id="parallax-shape">
                     <img class="shape-base" src="{{data.assets.images}}/parallax_shape/base.svg">
@@ -9,11 +9,29 @@
                     <img class="shape-round" src="{{data.assets.images}}/parallax_shape/round.svg"uk-parallax="y:80;x:-50; opacity:1,0.2">
                 </div>
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-text-right@m uk-flex-first@m">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-text-right@m uk-flex-first@m uk-flex uk-flex-column uk-flex-center uk-position-relative">
                 <h2 class="uk-heading-small text-light">Nextorbit Platform</h2>
-                <p class="text-lead-small">
-                    NextOrbit is a Cloud Based SAAS platform that enables Retailers to strengthen operational decision-making, support high growth and enhance great customer experience using Artificial Intelligence and Machine Learning. 
-                </p>
+
+                <div uk-slider>
+                    <ul class="uk-slider-items uk-child-width-1-1">
+                        <li class="text-lead-small">
+                            <p>
+                                NextOrbit is a Cloud Based SAAS platform that enables Retailers to strengthen operational decision-making, support high growth and enhance great customer experience using Artificial Intelligence and Machine Learning.                             
+                            </p>
+                        </li>
+                        <li class="text-lead-small">
+                            <p>
+                                With our Advanced predictors and predicting algorithems, we help  you to Predict and respond to demand peak and troughs. NextOrbit also help you to price up or down to maximize profits as opposed to rate of sales.                         
+                            </p>
+                        </li>
+                        <li class="text-lead-small">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id optio eligendi commodi dolore quod doloribus, delectus quo officiis incidunt, soluta voluptatibus modi dolores possimus.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-right uk-position-bottom"></ul>
+                </div>
             </div>
             <div class="uk-margin-auto-left uk-width-1-1 uk-width-1-2@m">
                 <button class="uk-button uk-button-inverse uk-button-secondary">
