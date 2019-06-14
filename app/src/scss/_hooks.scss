@@ -16,24 +16,32 @@
     
 }
 */
-$modifications: (
-    primary: $primary,
-    secondary: $secondary,
-    success: $success,
-    warning: $warning,
-    muted: $muted,
-    info: $info,
-    danger: $danger,
-    default: $dark,
-);
 
 @mixin hook-button () {
 
     border-radius: 50rem;
-    font-size: 14px;
     font-weight: $font-weight-strong;
+    font-size: 0.9rem;
     min-width: 165px;
     padding: 6px 30px;
+
+    &.uk-button-gradient {
+        @include background-gradient(to right, $gradient-color1, $gradient-color2);
+        color: $light;
+    }
+
+    &.uk-button-gradient-outline {
+        @include border-gradient(top left, $gradient-color1, $gradient-color2, 2px);
+        color: $primary;
+
+        @each $key,$color in (light: $light, muted: $muted)  {
+            &.uk-button-#{$key} {
+                color: $primary;
+
+                @include border-gradient(top left, $gradient-color1, $gradient-color2, 2px, $color);
+            }
+        }
+    }
 
     &.uk-button-raised {
         box-shadow: 0px 2px 11px 4px rgba(202,202,202,0.5)
@@ -186,18 +194,44 @@ $modifications: (
 }
 
 // header
-@mixin hook-header-misc () {
+@mixin hook-heading-misc () {
 
-    $heading-mini-font-size-m: $heading-mini-font-size-l*0.875;
-    $heading-mini-font-size: $heading-mini-font-size-m*8;
+    $heading-mini-font-size-m: $heading-mini-font-size-l*0.875 !default;
+    $heading-mini-font-size: $heading-mini-font-size-m*8 !default;
+
+    $heading-xsmall-font-size-m: $heading-xsmall-font-size-l*0.875 !default;
+    $heading-xsmall-font-size: $heading-xsmall-font-size-m*8 !default;
 
     .uk-heading-mini {
         font-size: $heading-mini-font-size;
     }
 
+    .uk-heading-xsmall {
+        font-size: $heading-xsmall-font-size;
+    }
+
+    .uk-heading-underline {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: $tint;
+            width: 25%;
+            height: 3px;
+            left: 0;
+            top: 110%;
+        }
+    }
+
     @media (min-width: $breakpoint-medium) {
 
         .uk-heading-mini{ font-size: $heading-mini-font-size-m; }
+
+        .uk-heading-xsmall {
+            font-size: $heading-xsmall-font-size-m;
+        }
     
     }
     
@@ -205,6 +239,10 @@ $modifications: (
     @media (min-width: $breakpoint-large) {
     
         .uk-heading-mini { font-size: $heading-mini-font-size-l; }
+
+        .uk-heading-xsmall {
+            font-size: $heading-xsmall-font-size-l;
+        }
     
     }
 }
@@ -215,4 +253,20 @@ $modifications: (
 @mixin hook-inverse-dotnav-item() {
 
     border: none;
+}
+
+//// MODAL ////////////////////////
+
+@mixin hook-modal-dialog() {
+    border-radius: 0.5rem;
+}
+
+@mixin hook-modal-close() {
+    background: $light;
+    border-radius: 50rem;
+}
+
+@mixin hook-modal-close-default() {
+    color: $danger;
+    box-shadow: 0px 2px 11px 4px rgba(#cacaca, 0.5)
 }

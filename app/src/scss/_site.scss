@@ -1,16 +1,3 @@
-//// MIXINS
-
-@mixin coin-tile () {
-    padding: 15px;
-    border-radius: $global-border-radius;
-    box-shadow: 0 2px 4px 0 rgba(202, 202, 202, 0.5);
-    background: $light;
-}
-
-@mixin raised () {
-    box-shadow: 0px 2px 11px 4px rgba(202,202,202,0.5)
-}
-
 ///// STYLES
 html, body {
     width: 100%;
@@ -25,6 +12,10 @@ html, body {
     font-weight: 300;
 }
 
+.text-medium {
+    font-weight: 600;
+}
+
 .text-bold {
     font-weight: 600;
 }
@@ -34,13 +25,20 @@ html, body {
     // line-height: 1.125;
 }
 
+.text-xlarge {
+    font-size: 1.875rem;
+}
+
+.text-xsmall {
+    font-size: 0.75rem;
+}
 
 .raised {
     @include raised();
 }
 
 .caption {
-    font-size: 1.285rem;
+    font-size: 1.25rem;
     padding: 0 1.5rem;
 }
 
@@ -90,44 +88,44 @@ html, body {
 
 
 
-#parallax-shape {
-    position: relative;
-    height: 280px;
-    width: 165px;
-    margin: auto;
+// #parallax-shape {
+//     position: relative;
+//     height: 280px;
+//     width: 165px;
+//     margin: auto;
 
-    * {
-        position: absolute;
-    }
+//     * {
+//         position: absolute;
+//     }
 
-    .shape-base {
-        width: 151px;
-        bottom: 26px;
-        left: 0px;
-        z-index: 12;
-    }
+//     .shape-base {
+//         width: 151px;
+//         bottom: 26px;
+//         left: 0px;
+//         z-index: 12;
+//     }
 
-    .shape-cube {
-        width: 38.5px;
-        right: 0;
-        bottom: 0;
-        z-index: 14;
-    }
+//     .shape-cube {
+//         width: 38.5px;
+//         right: 0;
+//         bottom: 0;
+//         z-index: 14;
+//     }
 
-    .shape-loading {
-        width: 49px;
-        left: 74px;
-        bottom: 185px;
-        z-index: 13;
-    }
+//     .shape-loading {
+//         width: 49px;
+//         left: 74px;
+//         bottom: 185px;
+//         z-index: 13;
+//     }
 
-    .shape-round {
-        width: 16.5px;
-        left: 40px;
-        bottom: 185px;
-        z-index: 11;
-    }
-}
+//     .shape-round {
+//         width: 16.5px;
+//         left: 40px;
+//         bottom: 185px;
+//         z-index: 11;
+//     }
+// }
 
 /// How it works
 
@@ -189,6 +187,7 @@ html, body {
 
     transition: all 0.3s ease-in-out;
     @include raised();
+    position: relative;
 
     .feat-list {
         animation: uk-fade-top-small 0.4s ease-in;
@@ -198,35 +197,60 @@ html, body {
         font-weight: 300;
     }
 
+    .feat-toggle-expand {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        color: transparentize($dark, 0.8);
+        
+        transform: rotate(-135deg);
+
+        transition: all 0.3s ease-in-out;
+    }
+
     &.closed {
-        background: transparent;
-        border: none;
-        box-shadow: none !important;
+        // background: transparent;
+        // border: none;
+        // box-shadow: none !important;
 
         .feat-list {
             display: none;
         }
 
-        .feat-icon {
-            @include coin-tile();
-            cursor: pointer;
+        .feat-toggle-expand {
+            color: $primary;
+            transform: rotate(45deg);
         }
 
-        .feat-text {
-            font-weight: 400;
-        }
+        // .feat-icon {
+        //     @include coin-tile();
+        //     cursor: pointer;
+        // }
 
-        [uk-grid] {
-            align-items: center;
-        }
+        // .feat-text {
+        //     font-weight: 400;
+        // }
+
+        // [uk-grid] {
+        //     align-items: center;
+        // }
     }
+}
+
+
+/// MISSION
+#mission {
+    background-image: url('../assets/images/scatter_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 //// FOOTER
 #footer {
 
     h5 {
-        color: #3D3D3D;
+        color: $light;
     }
 
     // .footer-nav
@@ -235,11 +259,23 @@ html, body {
         li a {
             font-size: 1rem;
             font-weight: $font-weight-strong;
-            color: #6F7076;
+            color: $light;
 
             &:hover, &.active {
-                color: $dark;
+                color: $muted;
             }
         }
+    }
+
+    #footer-address {
+        color: $light;
+    }
+}
+
+// Border
+@each $key, $color in $modifications {
+
+    .border-#{$key} {
+        border: $global-border-width solid $color;
     }
 }

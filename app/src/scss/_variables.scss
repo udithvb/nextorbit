@@ -41,18 +41,22 @@ $global-emphasis-color: $dark;
 $global-inverse-color: $light;
 
 $global-font-family: "HelveticaNeue-Light", /*"Helvetica Neue Light", "Helvetica Neue", Helvetica,*/ 'Lato', sans-serif;
-$global-font-size: 14px;
+$global-font-size: 16px;
 
-// border radius
+// border
 $global-border-radius: 0.5rem;
-
+$global-border-width: 2px;
 // extra
 
-$heading-medium-font-size-l: 3.25rem;
+// $heading-medium-font-size-l: 3.25rem;
 $heading-mini-font-size-l: 1.65rem;
+$heading-xsmall-font-size-l: 2.25rem;
 
 // cards
 $card-title-font-size: 20px;
+
+$card-large-body-padding-horizontal-l: 30px;
+$card-large-body-padding-vertical-l: 50px;
 
 // logo
 $logo-font-family: 'Nunito', sans-serif;
@@ -61,6 +65,12 @@ $logo-font-size: 26px;
 // dotnav
 $dotnav-item-width: 12px;
 $inverse-dotnav-item-background: rgba(255,255,255,0.35);
+
+// modal
+$modal-background: rgba(#5e5e5e, 0.36);
+$modal-close-padding: 10px;
+$modal-close-position: -$modal-close-padding;
+
 // => Add your own theming variables below //
 
 $font-weight-strong: 600;
@@ -70,4 +80,17 @@ $tilted-section-shape: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%2
 
 
 // (x) Donot write custom styling here //
+$gradient-color1: #7469F1;
+$gradient-color2: #47CCE7;
 
+// modifications for items
+$modifications: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    warning: $warning,
+    muted: $muted,
+    info: $info,
+    danger: $danger,
+    default: $dark,
+);

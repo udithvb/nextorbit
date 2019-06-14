@@ -1,0 +1,10 @@
+@mixin background-gradient($direction, $color1, $color2) {
+    background-image: linear-gradient($direction, $color1, $color2);
+}
+
+@mixin border-gradient($from, $color1, $color2, $width: $global-border-width, $color-in: white) {
+    background-image: linear-gradient($color-in, $color-in), radial-gradient(circle at #{$from}, $color1, $color2);
+    border: $width solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}

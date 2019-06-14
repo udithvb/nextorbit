@@ -2,15 +2,17 @@
 
     <div class="uk-container uk-text-center">
 
-        <h2 class="uk-heading-small text-light uk-margin-medium-bottom">Benefits</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom">Benefits</h2>
 
-        <div class="uk-grid-large" uk-grid>
+        <div class="uk-grid-small" uk-grid>
 
             {% for benefit in data.benefits %}
                 <div class="uk-width-1-2 uk-width-1-4@m uk-text-center">
-                    <img class="svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/{{benefit.icon}}">
-                    <div class="uk-margin-top text-bold caption uk-margin-top" title="{{benefit.text}}">
-                        {{benefit.text}}
+                    <div class="uk-card uk-card-default uk-card-body uk-height-1-1">
+                        <img class="svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/benefits/{{benefit.icon}}">
+                        <div class="uk-margin-top caption uk-margin-top" title="{{benefit.text}}">
+                            {{benefit.text}}
+                        </div>
                     </div>
                 </div>
             {% endfor %}

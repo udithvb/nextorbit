@@ -11,12 +11,21 @@ import "./bootstrap";
 * Use bootstrap.js to require node packages.
 */
 
-$("#feat_idm .feat-icon").click(() => {
-    $("#feat_ip").addClass("closed");
-    $("#feat_idm").removeClass("closed");
-})
+$("#feat_idm .feat-toggle-expand, #feat_ip .feat-toggle-expand").click(() => {
+    
+    if ($('#feat_idm').hasClass('closed')) {
+        $("#feat_ip").addClass("closed");
+        $("#feat_idm").removeClass("closed");
 
-$("#feat_ip .feat-icon").click(() => {
-    $("#feat_idm").addClass("closed");
-    $("#feat_ip").removeClass("closed");
+        $("#feature-image-idm").removeClass("uk-hidden")
+        $("#feature-image-ip").addClass("uk-hidden")
+    }
+
+    else {
+        $("#feat_idm").addClass("closed");
+        $("#feat_ip").removeClass("closed");
+
+        $("#feature-image-ip").removeClass("uk-hidden")
+        $("#feature-image-idm").addClass("uk-hidden")
+    }
 })

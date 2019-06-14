@@ -10,12 +10,20 @@
     },
     "benefits": [
         {
-            "icon": "bfpst.svg",
-            "text": "Better Full Price sell through"
+            "icon": "hit.svg",
+            "text": "Higher Inventory Turns"
+        },
+        {
+            "icon": "hp.svg",
+            "text": "Higher Profits"
         },
         {
             "icon": "wco.svg",
             "text": "Working capital optimization"
+        },
+        {
+            "icon": "bfpst.svg",
+            "text": "Better Full Price sell through"
         },
         {
             "icon": "hosa.svg",
@@ -28,14 +36,6 @@
         {
             "icon": "hclrv.svg",
             "text": "Higher Customer Loyalty & Repeat Visits"
-        },
-        {
-            "icon": "hit.svg",
-            "text": "Higher Inventory Turns"
-        },
-        {
-            "icon": "lsdci.svg",
-            "text": "Lower Store or DC Inventory"
         },
         {
             "icon": "mep.svg",

@@ -7,6 +7,9 @@
             <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large@m">
 
                 <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger" id="feat_idm">
+
+                    <a class="feat-toggle-expand"><i class="fas fa-arrow-right"></i></a>
+
                     <div uk-grid>
                         <div class="uk-width-auto">
                             <div class="feat-icon">
@@ -25,16 +28,20 @@
                                     <li>Intelligent store ordering to enhance sales & Margins.</li>
                                 </ul>
                             </p>
-                            
                         </div>
+
                     </div>
                 </div>
 
                 <div class="uk-margin-top uk-card uk-card-small uk-card-body uk-card-tint uk-card-success closed" id="feat_ip">
+
+                    <a class="feat-toggle-expand"><i class="fas fa-arrow-right"></i></a>
+
                     <div uk-grid>
                         <div class="uk-width-auto">
                             <div class="feat-icon">
-                                <img class="small svg-icon" alt="Intelligent Prixing" uk-img="data-src: {{data.assets.images}}/svg_icons/ip.svg">
+                                <img class="small svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/idm.svg">
+                                {# <img class="small svg-icon" alt="Intelligent Prixing" uk-img="data-src: {{data.assets.images}}/svg_icons/ip.svg"> #}
                             </div>
                         </div>
                         <div class="uk-width-expand uk-text-left">
@@ -57,11 +64,15 @@
             </div>
             <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large">
                 
-                <div>
-                    <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard.png">
+                <div id="feature-image-idm">
+                    <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard_idm.png">
                 </div>
 
-                <a href='#' class="uk-button uk-button-outline uk-button-primary uk-margin-large-top">Request Demo</a>
+                <div id="feature-image-ip" class="uk-hidden">
+                    <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard_ip.png">
+                </div>
+
+                <a class="uk-button uk-button-gradient-outline uk-button-muted uk-margin-large-top" uk-toggle="#request-demo-modal">Request Demo</a>
 
             </div>
 
