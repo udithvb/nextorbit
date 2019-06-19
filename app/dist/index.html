@@ -89,7 +89,7 @@
 
         
         <div class="uk-section uk-section-default uk-flex uk-flex-column" id="hero" uk-height-viewport="offset-top: true">
-    <div class="uk-container uk-text-center uk-margin-auto-top">
+    <div class="uk-container uk-text-center uk-margin-auto-vertical uk-margin-auto-top@m">
 
         <div class="uk-flex-middle" uk-grid>
 
@@ -104,25 +104,25 @@
 
                 <div class="uk-child-width-1-2" uk-grid>
                     <div class="uk-text-center">
-                        <div class="uk-border-rounded border-danger uk-padding-small">
+                        <div class="uk-border-rounded border-danger uk-padding-small uk-height-1-1">
                             Demand Forecasting
                         </div>
                     </div>
 
                     <div class="uk-text-center">
-                        <div class="uk-border-rounded border-success uk-padding-small">
+                        <div class="uk-border-rounded border-success uk-padding-small uk-height-1-1">
                             Cadence of Price Markdowns
                         </div>
                     </div>
 
                     <div class="uk-text-center">
-                        <div class="uk-border-rounded border-warning uk-padding-small">
+                        <div class="uk-border-rounded border-warning uk-padding-small uk-height-1-1">
                             Predictive Alerts
                         </div>
                     </div>
 
                     <div class="uk-text-center">
-                        <div class="uk-border-rounded border-info uk-padding-small">
+                        <div class="uk-border-rounded border-info uk-padding-small uk-height-1-1">
                             Supplier PO Triggers
                         </div>
                     </div>
@@ -132,7 +132,7 @@
         
     </div>
 
-    <div class="uk-margin-large-top uk-text-center">
+    <div class="uk-margin-auto-vertical uk-text-center">
         <a href="#" class="uk-button uk-button-gradient uk-button-raised">Learn More</a>
     </div>
 </div>
@@ -244,7 +244,7 @@
 
         <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom">Benefits</h2>
 
-        <div class="uk-grid-small" uk-grid>
+        <div class="uk-grid-medium" uk-grid>
 
             
                 <div class="uk-width-1-2 uk-width-1-4@m uk-text-center">
@@ -333,104 +333,16 @@
     <div class="uk-container uk-text-center">
         <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom">How It Works</h2>
 
-        <div id="hiw-switches" uk-switcher="connect: .how-it-works-switcher; toggle: > a; animation: uk-animation-fade;">
-            <a class="switch">1</a>
-            <a class="switch">2</a>
-            <a class="switch">3</a>
+        <div uk-lightbox>
+            <a href="assets/images/how_it_works.png" data-alt="How it works">
+                <img alt="Intelligent Demand Planning" uk-img="data-src: assets/images/how_it_works.png" uk-responsive>
+            </a>
         </div>
 
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-            <div class="uk-width-1-1 uk-width-1-2@m">
-                <ul class="uk-switcher how-it-works-switcher">
-                    <li>
-                        <div class="uk-placeholder">
-                            <i class="fas fa-database uk-text-large"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-placeholder">
-                            <i class="fas fa-image uk-text-large"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-placeholder">
-                            <i class="fas fa-image uk-text-large"></i>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="uk-text-center uk-margin-top">
+            <div class="uk-button uk-button-outline uk-button-primary">Request Demo</div>
+        </div>
 
-            <div class="uk-width-1-1 uk-width-1-2@m">
-                <ul class="uk-switcher how-it-works-switcher">
-                    <li>
-                        <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger raised">
-    <div uk-grid>
-        <div class="uk-width-auto">
-            <div class="svg-icon small"></div>
-        </div>
-        <div class="uk-width-expand uk-text-left">
-            <h3 class="uk-card-title">It Starts with Collecting Data</h3>
-            <p class="text-light">
-                <span class="line uk-text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente optio nemo quod ad labore sit et magni fugiat. Tempore illo dolore aspernatur ipsam! Inventore, ea!</span> 
-            </p>
-            
-        </div>
-    </div>
-</div>
-                    </li>
-                    <li>
-                        <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger raised">
-    <div uk-grid>
-        <div class="uk-width-auto">
-            <div class="svg-icon small"></div>
-        </div>
-        <div class="uk-width-expand uk-text-left">
-            <h3 class="uk-card-title">Platform On the Cloud</h3>
-            <p class="text-light">
-                <span class="line uk-text-justify">Once the data is collected, NextOrbit with its properitory algorithms constantly learning, do the process of</span> 
-                <ul class="uk-list uk-list-bullet text-light uk-text-small">
-                    <li>Complex Event Processing Time Series</li>
-                    <li>Performance Classification</li>
-                    <li>Knowledge Mining</li>
-                    <li>Pattern Recognition</li>
-                    <li>Continous Learning And Adapting</li>
-                </ul>
-            </p>
-            
-        </div>
-    </div>
-</div>
-                    </li>
-                    <li>
-                        <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger raised">
-    <div uk-grid>
-        <div class="uk-width-auto">
-            <div class="svg-icon small"></div>
-        </div>
-        <div class="uk-width-expand uk-text-left">
-            <h3 class="uk-card-title">Intelligence A Step Ahead</h3>
-            <p class="text-light">
-                <span class="line uk-text-justify">The Data is processed along with our secret algorithms to provide you better insights on.</span> 
-                <ul class="uk-list uk-list-bullet text-light uk-text-small">
-                    <li>Demand forcasts</li>
-                    <li>Store Orders</li>
-                    <li>Price and Promotions</li>
-                    <li>Pattern Recognition</li>
-                    <li>Recommendations</li>
-                </ul>
-            </p>
-            
-        </div>
-    </div>
-</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="uk-margin-auto-left uk-width-1-1 uk-width-1-2@m">
-                <div class="uk-button uk-button-outline uk-button-primary">Request Demo</div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -610,9 +522,7 @@
                     
         </div>
 
-        <div class="uk-padding-small uk-margin-large-top">
-            <div class="uk-button uk-button-primary">Join Us</div>
-        </div>
+        
     </div>
 </div>   
 

@@ -40,7 +40,7 @@ $global-color: $gray;
 $global-emphasis-color: $dark;
 $global-inverse-color: $light;
 
-$global-font-family: "HelveticaNeue-Light", /*"Helvetica Neue Light", "Helvetica Neue", Helvetica,*/ 'Lato', sans-serif;
+$global-font-family: /*'HelveticaNeue',*/ 'Lato', sans-serif;
 $global-font-size: 16px;
 
 // border
@@ -74,9 +74,15 @@ $modal-close-position: -$modal-close-padding;
 // text
 $text-lead-font-size: 1.875rem;
 
+// container
+$container-max-width: 1100px;
+
+// lightbox
+$lightbox-background: $light;
+
 // => Add your own theming variables below //
 
-$font-weight-strong: 600;
+$font-weight-strong: 700;
 
 // tilted sections
 $tilted-section-shape: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpolygon%20fill%3D%22#000%22%20points%3D%220%2C0%201000%2C30%200%2C30%22/%3E%3C/svg%3E";

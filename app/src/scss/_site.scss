@@ -1,8 +1,8 @@
 ///// STYLES
-html, body {
-    width: 100%;
-    height: 100%;
-}
+// html, body {
+//     width: 100%;
+//     height: 100%;
+// }
 
 .line {
     display: inline-block
@@ -246,6 +246,11 @@ html, body {
     background-size: cover;
 }
 
+/// TEAM
+#team {
+    padding: $global-gutter*2 0;
+}
+
 //// FOOTER
 #footer {
 
@@ -258,7 +263,7 @@ html, body {
 
         li a {
             font-size: 1rem;
-            font-weight: $font-weight-strong;
+            font-weight: 500;
             color: $light;
 
             &:hover, &.active {
