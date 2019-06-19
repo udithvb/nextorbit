@@ -197,10 +197,10 @@
 @mixin hook-heading-misc () {
 
     $heading-mini-font-size-m: $heading-mini-font-size-l*0.875 !default;
-    $heading-mini-font-size: $heading-mini-font-size-m*8 !default;
+    $heading-mini-font-size: $heading-mini-font-size-m*0.8 !default;
 
     $heading-xsmall-font-size-m: $heading-xsmall-font-size-l*0.875 !default;
-    $heading-xsmall-font-size: $heading-xsmall-font-size-m*8 !default;
+    $heading-xsmall-font-size: $heading-xsmall-font-size-m*0.8 !default;
 
     .uk-heading-mini {
         font-size: $heading-mini-font-size;
