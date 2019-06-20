@@ -24,6 +24,11 @@
     font-size: 0.9rem;
     min-width: 165px;
     padding: 6px 30px;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        transform: translateY(-5%)
+    }
 
     &.uk-button-gradient {
         @include background-gradient(to right, $gradient-color1, $gradient-color2);
@@ -34,12 +39,17 @@
         @include border-gradient(top left, $gradient-color1, $gradient-color2, 2px);
         color: $primary;
 
-        @each $key,$color in (light: $light, muted: $muted)  {
+        @each $key,$color in (light: $light, muted: $muted, tertiary: $tertiary)  {
             &.uk-button-#{$key} {
                 color: $primary;
 
                 @include border-gradient(top left, $gradient-color1, $gradient-color2, 2px, $color);
             }
+        }
+
+        &:hover {
+            @include background-gradient(to right, $gradient-color1, $gradient-color2);
+            color: $light;
         }
     }
 
@@ -184,6 +194,33 @@
     height: 9px;
     top: calc(50% - 4.5px);
     left: 4.5px;
+}
+
+@mixin hook-list-misc () {
+
+    .uk-list-clickable {
+        margin-top: 4rem;
+        li {
+            margin-top: 0px !important;
+            padding-top: 0px !important;
+            border-top: 1px solid rgba(255,255,255,0.1);
+    
+            a {
+                display: block;
+                padding: 0.75rem 1.5rem;
+    
+            }
+    
+            &:hover {
+                background: $dark;
+            }
+    
+            &.uk-active {
+                background: $primary;
+            }
+        }
+    }
+
 }
 
 // tile 

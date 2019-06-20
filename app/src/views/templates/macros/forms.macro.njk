@@ -1,0 +1,11 @@
+{% macro checkbox(name, value='', checked=false, label='') %}
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="{{name}}" value="{{value}}" {%if checked%} checked {%endif%}>
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class="{% if checked %} fas {% else %} far {% endif %} fa-circle"></i>
+            </span>
+            {{label}}
+        </div>
+    </div>
+{% endmacro %}

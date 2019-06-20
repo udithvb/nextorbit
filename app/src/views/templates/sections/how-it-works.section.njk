@@ -1,15 +1,15 @@
 <div class="uk-section uk-section-tertiary" id="how_it_works">
     <div class="uk-container uk-text-center">
-        <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom">How It Works</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">How It Works</h2>
 
         <div uk-lightbox>
-            <a href="{{data.assets.images}}/how_it_works.png" data-alt="How it works">
+            <a href="{{data.assets.images}}/how_it_works.png" data-alt="How it works" uk-scrollspy="target: > img; cls: uk-animation-scale-up; delay: 100; repeat: true">
                 <img alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/how_it_works.png" uk-responsive>
             </a>
         </div>
 
-        <div class="uk-text-center uk-margin-top">
-            <div class="uk-button uk-button-outline uk-button-primary">Request Demo</div>
+        <div class="uk-text-center uk-margin-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600; repeat: true">
+            <div class="uk-button uk-button-gradient-outline uk-button-tertiary uk-button-primary" uk-toggle="#request-demo-modal">Request Demo</div>
         </div>
 
     </div>

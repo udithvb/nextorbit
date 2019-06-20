@@ -1,10 +1,10 @@
 <div class="uk-section uk-section-muted" id="features">
     <div class="uk-container uk-text-center">
-        <h2 class="uk-heading-small text-light uk-margin-medium-bottom">Features</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Features</h2>
 
         <div class="uk-grid-large uk-flex-middle" uk-grid>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large@m">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large@m" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium; delay:300; repeat: true">
 
                 <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger" id="feat_idm">
 
@@ -62,7 +62,7 @@
                 </div>
             
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large" uk-scrollspy="target: > *; cls: uk-animation-fade; delay:500; repeat: true">
                 
                 <div id="feature-image-idm">
                     <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard_idm.png">
@@ -72,7 +72,7 @@
                     <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard_ip.png">
                 </div>
 
-                <a class="uk-button uk-button-gradient-outline uk-button-muted uk-margin-large-top" uk-toggle="#request-demo-modal">Request Demo</a>
+                <a uk-scrollspy-class="uk-animation-slide-bottom-small" class="uk-button uk-button-gradient-outline uk-button-muted uk-margin-large-top" uk-toggle="#request-demo-modal">Request Demo</a>
 
             </div>
 

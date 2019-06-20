@@ -1,45 +1,147 @@
 {
-    "social": {
-        "facebook": "tracingpaperofficial",
-        "instagram": "tracingpaperofficial",
-        "twitter": "tracingpaperz"
+  "social": {
+    "facebook": "tracingpaperofficial",
+    "instagram": "tracingpaperofficial",
+    "twitter": "tracingpaperz"
+  },
+  "assets": {
+    "images": "assets/images",
+    "icons": "assets/icons"
+  },
+  "benefits": [
+    {
+      "icon": "hit.svg",
+      "text": "Higher Inventory Turns"
     },
-    "assets": {
-        "images": "assets/images",
-        "icons": "assets/icons"
+    {
+      "icon": "hp.svg",
+      "text": "Higher Profits"
     },
-    "benefits": [
-        {
-            "icon": "hit.svg",
-            "text": "Higher Inventory Turns"
+    {
+      "icon": "wco.svg",
+      "text": "Working capital optimization"
+    },
+    {
+      "icon": "bfpst.svg",
+      "text": "Better Full Price sell through"
+    },
+    {
+      "icon": "hosa.svg",
+      "text": "Higher On Shelf Availability"
+    },
+    {
+      "icon": "hbs.svg",
+      "text": "Higher Basket Sizes"
+    },
+    {
+      "icon": "hclrv.svg",
+      "text": "Higher Customer Loyalty & Repeat Visits"
+    },
+    {
+      "icon": "mep.svg",
+      "text": "More Effective Planning"
+    }
+  ],
+
+  "forms": {
+    "request_demo": {
+      "action": "#YOUR_ACTION",
+      "fields": {
+        "pain_problem_to_solve": {
+          "name": "pain_problem_to_solve",
+          "options": [
+            {
+              "label": "Over Stock ",
+              "value": "over_stock"
+            },
+            {
+              "label": "Product Expiration",
+              "value": "product_expiration"
+            },
+            {
+              "label": "Out of Stock ",
+              "value": "out_of_stock"
+            },
+            {
+              "label": "Innefficiant planning for growth opportunities",
+              "value": "innefficiant_planning_for_growth_opportunities"
+            },
+            {
+              "label": "Leaving money on the table Due to Improper Markdown",
+              "value": "leaving_money_on_the_table_due_to_improper_markdown"
+            },
+            {
+              "label": "Cant Figure out latent Demand",
+              "value": "cant_figure_out_latent_demand"
+            },
+            {
+              "label": "What more merchandise could sell",
+              "value": "what_more_merchandise_could_sell"
+            },
+            {
+              "label": "Food Wastage",
+              "value": "food_wastage"
+            },
+            {
+              "label": "Not Responding Speedily to fashion Trends",
+              "value": "not_responding_speedily_to_fashion_trends"
+            },
+            {
+              "label": "Over Exposure to Competitor Pricing",
+              "value": "over_exposure_to_competitor_pricing"
+            }
+          ]
         },
-        {
-            "icon": "hp.svg",
-            "text": "Higher Profits"
+        "benefit_expected": {
+          "name": "benefit_expected",
+          "options": [
+            {
+              "label": "Better Full Price sell through (Less Discounting) ",
+              "value": "better_full_price_sell_through_less_discounting"
+            },
+            {
+              "label": "Higher OSA (on shelf Availability)",
+              "value": "higher_osa_on_shelf_availability"
+            },
+            {
+              "label": "Higher Inventory Turns",
+              "value": "higher_inventory_turns"
+            },
+            {
+              "label": "Lower Store or DC inventory",
+              "value": "lower_store_or_dc_inventory"
+            },
+            { 
+                "label": "Higher Basket Sizes", 
+                "value": "higher_basket_sizes" 
+            },
+            {
+              "label": "Higher Customer Loyality (More Repeat visits)",
+              "value": "higher_customer_loyality_more_repeat_visits"
+            },
+            {
+              "label": "More Effective Planning",
+              "value": "more_effective_planning"
+            }
+          ]
         },
-        {
-            "icon": "wco.svg",
-            "text": "Working capital optimization"
+        "name": {
+          "name": "name",
+          "label": "Name"
         },
-        {
-            "icon": "bfpst.svg",
-            "text": "Better Full Price sell through"
+        "email": {
+          "name": "email",
+          "label": "Email Address"
         },
-        {
-            "icon": "hosa.svg",
-            "text": "Higher On Shelf Availability"
+        "organisation": {
+          "name": "organisation",
+          "label": "Organisation"
         },
-        {
-            "icon": "hbs.svg",
-            "text": "Higher Basket Sizes"
-        },
-        {
-            "icon": "hclrv.svg",
-            "text": "Higher Customer Loyalty & Repeat Visits"
-        },
-        {
-            "icon": "mep.svg",
-            "text": "More Effective Planning"
+        "message": {
+          "name": "message",
+          "label": "Message (Optional)"
         }
-    ]
+      }
+    }
+  }
 }

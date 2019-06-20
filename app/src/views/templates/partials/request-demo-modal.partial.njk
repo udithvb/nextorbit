@@ -1,23 +1,62 @@
-<div id="request-demo-modal" class="uk-flex-top" uk-modal>
+{% import "macros/forms.macro.njk" as forms %}
 
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+<div id="request-demo-modal" class="uk-flex-top uk-modal-container" uk-modal>
+
+    <div class="uk-modal-dialog uk-modal-body">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
-        <h2 class="text-light uk-text-center" style="font-size:25px">Get Started</h2>
+        <h2 class="uk-heading-xsmall uk-text-center">Get Started</h2>
 
-        <div class="uk-grid-medium" uk-grid>
-            
-            <div class="uk-width-1-1 uk-width-1-2@m">
-                <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Pain Problems to Solve</h3>
-                <div class="uk-text-small uk-text-light">Select 3 problems</div>
-            </div>
+        {% set req_form = data.forms.request_demo %}
 
-            <div class="uk-width-1-1 uk-width-1-2@m">
-                <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Benefit Expected</h3>
-                <div class="uk-text-small uk-text-light">Select Top one or two</div>
+        <form action="{{req_form.action}}" method="post" class="uk-margin-top uk-padding" id="request-demo-form">
+            <div class="uk-grid-medium" uk-grid>
+                
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Pain Problems to Solve</h3>
+                    <div class="uk-text-small uk-text-light">Select 3 problems</div>
+                    <div class="uk-margin-top">
+                        {% set ppts = req_form.fields.pain_problem_to_solve %}
+                        {% for check in ppts.options %}
+                            {{forms.checkbox(ppts.name+"[]", check.value, false, check.label)}}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Benefit Expected</h3>
+                    <div class="uk-text-small uk-text-light">Select Top one or two</div>
+                    <div class="uk-margin-top">
+                        {% set be = req_form.fields.benefit_expected %}
+                        {% for check in be.options %}
+                            {{forms.checkbox(be.name+'[]', check.value, false, check.label)}}
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="uk-grid-medium" uk-grid>
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <div class="uk-margin form-input" data-label="{{req_form.fields.name.label}}">
+                        <input type="text" name="{{req_form.fields.name.name}}" id="{{req_form.fields.name.name}}" class="uk-input">
+                    </div>
+                    <div class="uk-margin form-input" data-label="{{req_form.fields.email.label}}">
+                        <input type="email" name="{{req_form.fields.email.name}}" id="{{req_form.fields.email.name}}" class="uk-input">
+                    </div>
+                    <div class="uk-margin form-input" data-label="{{req_form.fields.organisation.label}}">
+                        <input type="text" name="{{req_form.fields.organisation.name}}" id="{{req_form.fields.organisation.name}}" class="uk-input">
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <div class="uk-margin form-textarea uk-height-1-1" data-label="{{req_form.fields.message.label}}">
+                        <textarea name="{{req_form.fields.message.name}}" id="{{req_form.fields.message.name}}" rows=6 class="uk-textarea uk-height-1-1"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-large-top uk-text-center uk-text-right@m">
+                <button class="uk-button uk-button-primary" name="submit" value="Submit" type="submit">Submit</button>
+            </div>
+        </form>
     
     </div>
 </div>

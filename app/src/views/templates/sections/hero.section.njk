@@ -1,18 +1,18 @@
 <div class="uk-section uk-section-default uk-flex uk-flex-column" id="hero" uk-height-viewport="offset-top: true">
-    <div class="uk-container uk-text-center uk-margin-auto-vertical uk-margin-auto-top@m">
+    <div class="uk-container uk-text-center uk-height-1-1">
 
         <div class="uk-flex-middle" uk-grid>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex-last@m uk-clearfix">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-flex-last@m uk-clearfix" uk-scrollspy="cls: uk-animation-scale-up;">
                 <img class="uk-float-right@m" alt="Tite Graphics" uk-img="data-src: assets/images/title_graphics.svg">
             </div>
 
             <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                <h1 class="uk-heading-small text-light">
+                <h1 class="uk-heading-small text-light" uk-scrollspy="cls: uk-animation-fade;">
                     Powering key <strong>Retailer, Brand & Distributor decisions</strong> using AI and Machine Learning
                 </h1>
 
-                <div class="uk-child-width-1-2" uk-grid>
+                <div class="uk-child-width-1-2" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-left-small; delay: 200">
                     <div class="uk-text-center">
                         <div class="uk-border-rounded border-danger uk-padding-small uk-height-1-1">
                             Demand Forecasting
@@ -39,10 +39,10 @@
                 </div>
             </div>
         </div>
-        
-    </div>
 
-    <div class="uk-margin-auto-vertical uk-text-center">
-        <a href="#" class="uk-button uk-button-gradient uk-button-raised">Learn More</a>
+        <div class="uk-margin-large-top" uk-scrollspy="cls: uk-animation-slide-bottom-small;delay:300;">
+            <a href="#" class="uk-button uk-button-gradient uk-button-raised">Learn More</a>
+        </div>
+        
     </div>
 </div>

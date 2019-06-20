@@ -1,0 +1,12 @@
+<!-- This is the off-canvas -->
+<div id="hamburger-menu" uk-offcanvas>
+    <div class="uk-offcanvas-bar uk-padding-remove">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-list uk-list-clickable" uk-scrollspy-nav="closest: li; scroll: true;  offset: 80;">
+            {% include "partials/nav-links.partial.njk" %}
+        </ul>
+
+    </div>
+</div>

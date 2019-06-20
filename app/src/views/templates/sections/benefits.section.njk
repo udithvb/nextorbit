@@ -2,9 +2,9 @@
 
     <div class="uk-container uk-text-center">
 
-        <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom">Benefits</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Benefits</h2>
 
-        <div class="uk-grid-medium" uk-grid>
+        <div class="uk-grid-medium" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
 
             {% for benefit in data.benefits %}
                 <div class="uk-width-1-2 uk-width-1-4@m uk-text-center">
@@ -18,7 +18,7 @@
             {% endfor %}
         </div>
 
-        <a href="#" class="uk-button uk-button-primary uk-margin-large-top uk-button-raised">
+        <a class="uk-button uk-button-gradient uk-margin-large-top uk-button-raised" uk-toggle="#request-demo-modal" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 100; repeat: true">
             Get Started
         </a>
     </div>

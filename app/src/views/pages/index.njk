@@ -4,6 +4,9 @@
 
     <div id="bodyWrapper">
 
+        {# Hamburger #}
+        {% include "partials/hamburger-menu.partial.njk" %}
+
         {# Navbar #}
         {% import "macros/navbar.macro.njk" as navbar %}
         {{ navbar.nav(app, 'home') }}

@@ -2,10 +2,15 @@
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="navbar">
     <nav class="uk-navbar-container uk-container uk-navbar-transparent uk-navbar-fixed" uk-navbar="mode: click">
         <div class="uk-navbar-left">
-            <a href="{{app.url}}" class="uk-navbar-item uk-padding-remove">
+
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"></a>
+            </div>
+
+            <a href="{{app.url}}" class="uk-navbar-item uk-padding-remove uk-visible@m">
                 <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
             </a>
-            <a href="{{app.url}}" class="uk-navbar-item uk-logo uk-visible@m">
+            <a href="{{app.url}}" class="uk-navbar-item uk-logo">
                 {{app.title}}
             </a>
 
@@ -13,28 +18,11 @@
 
         <div class="uk-navbar-right">
 
-            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true;offset:80">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#features">Features</a>
-                </li>
-                <li>
-                    <a href="#benefits">Benefits</a>
-                </li>
-                <li>
-                    <a href="#how_it_works">How It Works</a>
-                </li>
-                <li>
-                    <a href="#team">Team</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
+            <ul class="uk-navbar-nav uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true; offset: 80;" uk-scrollspy="target: > li; cls: uk-animation-slide-top-small; delay: 100">
+                {% include "partials/nav-links.partial.njk" %}
             </ul>
 
-            <div class="uk-navbar-item">
+            <div class="uk-navbar-item" uk-scrollspy="target: > button; cls: uk-animation-slide-right-small; delay: 500">
                 <button href="#contact" class="uk-button uk-button-gradient-outline">
                     Contact Us
                 </button>

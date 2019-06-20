@@ -40,15 +40,51 @@
     <div id="bodyWrapper">
 
         
+        <!-- This is the off-canvas -->
+<div id="hamburger-menu" uk-offcanvas>
+    <div class="uk-offcanvas-bar uk-padding-remove">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-list uk-list-clickable" uk-scrollspy-nav="closest: li; scroll: true;  offset: 80;">
+            <li>
+    <a href="#about">About</a>
+</li>
+<li>
+    <a href="#features">Features</a>
+</li>
+<li>
+    <a href="#benefits">Benefits</a>
+</li>
+<li>
+    <a href="#how_it_works">How It Works</a>
+</li>
+<li>
+    <a href="#team">Team</a>
+</li>
+<li>
+    <a href="#blog">Blog</a>
+</li>
+        </ul>
+
+    </div>
+</div>
+
+        
         
         
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="navbar">
     <nav class="uk-navbar-container uk-container uk-navbar-transparent uk-navbar-fixed" uk-navbar="mode: click">
         <div class="uk-navbar-left">
-            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-padding-remove">
+
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"></a>
+            </div>
+
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-padding-remove uk-visible@m">
                 <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
             </a>
-            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-logo uk-visible@m">
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-logo">
                 NextOrbit
             </a>
 
@@ -56,28 +92,28 @@
 
         <div class="uk-navbar-right">
 
-            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true;offset:80">
+            <ul class="uk-navbar-nav uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true; offset: 80;" uk-scrollspy="target: > li; cls: uk-animation-slide-top-small; delay: 100">
                 <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#features">Features</a>
-                </li>
-                <li>
-                    <a href="#benefits">Benefits</a>
-                </li>
-                <li>
-                    <a href="#how_it_works">How It Works</a>
-                </li>
-                <li>
-                    <a href="#team">Team</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
+    <a href="#about">About</a>
+</li>
+<li>
+    <a href="#features">Features</a>
+</li>
+<li>
+    <a href="#benefits">Benefits</a>
+</li>
+<li>
+    <a href="#how_it_works">How It Works</a>
+</li>
+<li>
+    <a href="#team">Team</a>
+</li>
+<li>
+    <a href="#blog">Blog</a>
+</li>
             </ul>
 
-            <div class="uk-navbar-item">
+            <div class="uk-navbar-item" uk-scrollspy="target: > button; cls: uk-animation-slide-right-small; delay: 500">
                 <button href="#contact" class="uk-button uk-button-gradient-outline">
                     Contact Us
                 </button>
@@ -89,20 +125,20 @@
 
         
         <div class="uk-section uk-section-default uk-flex uk-flex-column" id="hero" uk-height-viewport="offset-top: true">
-    <div class="uk-container uk-text-center uk-margin-auto-vertical uk-margin-auto-top@m">
+    <div class="uk-container uk-text-center uk-height-1-1">
 
         <div class="uk-flex-middle" uk-grid>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex-last@m uk-clearfix">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-flex-last@m uk-clearfix" uk-scrollspy="cls: uk-animation-scale-up;">
                 <img class="uk-float-right@m" alt="Tite Graphics" uk-img="data-src: assets/images/title_graphics.svg">
             </div>
 
             <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                <h1 class="uk-heading-small text-light">
+                <h1 class="uk-heading-small text-light" uk-scrollspy="cls: uk-animation-fade;">
                     Powering key <strong>Retailer, Brand & Distributor decisions</strong> using AI and Machine Learning
                 </h1>
 
-                <div class="uk-child-width-1-2" uk-grid>
+                <div class="uk-child-width-1-2" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-left-small; delay: 200">
                     <div class="uk-text-center">
                         <div class="uk-border-rounded border-danger uk-padding-small uk-height-1-1">
                             Demand Forecasting
@@ -129,26 +165,26 @@
                 </div>
             </div>
         </div>
-        
-    </div>
 
-    <div class="uk-margin-auto-vertical uk-text-center">
-        <a href="#" class="uk-button uk-button-gradient uk-button-raised">Learn More</a>
+        <div class="uk-margin-large-top" uk-scrollspy="cls: uk-animation-slide-bottom-small;delay:300;">
+            <a href="#" class="uk-button uk-button-gradient uk-button-raised">Learn More</a>
+        </div>
+        
     </div>
 </div>
 
         
         <div class="uk-section uk-section-secondary uk-preserve-color" id="about">
-    <div class="uk-container uk-text-center uk-light">
-        <h2 class="uk-heading-xsmall text-light">NextOrbit Platform</h2>
+    <div class="uk-container uk-text-center uk-light" uk-scrollspy="target: > *; delay: 200">
+        <h2 class="uk-heading-xsmall text-light" uk-scrollspy-class="uk-animation-fade">NextOrbit Platform</h2>
 
-        <div class="uk-text-lead text-light">
+        <div class="uk-text-lead text-light" uk-scrollspy-class="uk-animation-fade">
             <p>With our Advanced Predictors and forecasting algorithms, we help you to Predict and Respond to demand peaks and troughs. We enable you to take action before you lose customer demand.</p>
             <p>NextOrbit help you to price up or down to maximize profits.</p>
         </div>
 
-        <div class="uk-margin-large-top uk-text-center">
-            <a href="#" class="uk-button uk-button-inverse uk-button-secondary btn-get-started">Get Started</a>
+        <div class="uk-margin-large-top uk-text-center" uk-scrollspy-class="uk-animation-slide-bottom-small">
+            <a href="#" class="uk-button uk-button-inverse uk-button-secondary btn-get-started" uk-toggle="#request-demo-modal">Get Started</a>
         </div>
     </div>
 </div>
@@ -156,11 +192,11 @@
         
         <div class="uk-section uk-section-muted" id="features">
     <div class="uk-container uk-text-center">
-        <h2 class="uk-heading-small text-light uk-margin-medium-bottom">Features</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Features</h2>
 
         <div class="uk-grid-large uk-flex-middle" uk-grid>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large@m">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large@m" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium; delay:300; repeat: true">
 
                 <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger" id="feat_idm">
 
@@ -218,7 +254,7 @@
                 </div>
             
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large" uk-scrollspy="target: > *; cls: uk-animation-fade; delay:500; repeat: true">
                 
                 <div id="feature-image-idm">
                     <img alt="Intelligent Pricing" src="assets/images/dashboard_idm.png">
@@ -228,7 +264,7 @@
                     <img alt="Intelligent Pricing" src="assets/images/dashboard_ip.png">
                 </div>
 
-                <a class="uk-button uk-button-gradient-outline uk-button-muted uk-margin-large-top" uk-toggle="#request-demo-modal">Request Demo</a>
+                <a uk-scrollspy-class="uk-animation-slide-bottom-small" class="uk-button uk-button-gradient-outline uk-button-muted uk-margin-large-top" uk-toggle="#request-demo-modal">Request Demo</a>
 
             </div>
 
@@ -242,9 +278,9 @@
 
     <div class="uk-container uk-text-center">
 
-        <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom">Benefits</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Benefits</h2>
 
-        <div class="uk-grid-medium" uk-grid>
+        <div class="uk-grid-medium" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
 
             
                 <div class="uk-width-1-2 uk-width-1-4@m uk-text-center">
@@ -321,7 +357,7 @@
             
         </div>
 
-        <a href="#" class="uk-button uk-button-primary uk-margin-large-top uk-button-raised">
+        <a class="uk-button uk-button-gradient uk-margin-large-top uk-button-raised" uk-toggle="#request-demo-modal" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 100; repeat: true">
             Get Started
         </a>
     </div>
@@ -331,16 +367,16 @@
         
         <div class="uk-section uk-section-tertiary" id="how_it_works">
     <div class="uk-container uk-text-center">
-        <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom">How It Works</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">How It Works</h2>
 
         <div uk-lightbox>
-            <a href="assets/images/how_it_works.png" data-alt="How it works">
+            <a href="assets/images/how_it_works.png" data-alt="How it works" uk-scrollspy="target: > img; cls: uk-animation-scale-up; delay: 100; repeat: true">
                 <img alt="Intelligent Demand Planning" uk-img="data-src: assets/images/how_it_works.png" uk-responsive>
             </a>
         </div>
 
-        <div class="uk-text-center uk-margin-top">
-            <div class="uk-button uk-button-outline uk-button-primary">Request Demo</div>
+        <div class="uk-text-center uk-margin-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600; repeat: true">
+            <div class="uk-button uk-button-gradient-outline uk-button-tertiary uk-button-primary" uk-toggle="#request-demo-modal">Request Demo</div>
         </div>
 
     </div>
@@ -350,14 +386,14 @@
         <div class="uk-section uk-section-default" id="pricing">
     <div class="uk-container uk-text-center">
 
-        <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom">Pricing</h2>
+        <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Pricing</h2>
 
         <div class="uk-padding-large">
             <div class="uk-grid-large uk-flex-middle" uk-grid>
 
                 <div class="uk-width-1-1 uk-width-1-2@m">
 
-                    <div class="uk-grid-medium uk-child-width-1-2" uk-grid>
+                    <div class="uk-grid-medium uk-child-width-1-2" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-scale-down; delay:200; repeat: true">
                         <div>
                             <div class="uk-card uk-card-large uk-height-1-1 uk-card-small uk-card-body uk-card-tint uk-card-warning raised">
                                 <span class="text-medium">Onboarding Fee</span>
@@ -386,9 +422,9 @@
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left">
 
-                    <h3 class="uk-text-large uk-heading-underline text-bold">Transparency & Flexibility</h3>
+                    <h3 class="uk-text-large uk-heading-underline text-bold" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">Transparency & Flexibility</h3>
 
-                    <div class="uk-text-justify uk-text-small uk-margin-top">
+                    <div class="uk-text-justify uk-text-small uk-margin-top" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:200">
                         <p>
                             A transparent cost effective monthly subscription model based on the number of stores and categories. No contracts or lockin period for the business.
                         </p>
@@ -398,8 +434,8 @@
                         </p>
                     </div>
 
-                    <div class="uk-margin-medium-top uk-text-left@m">
-                        <a href="#" class="uk-button uk-button-gradient uk-button-raised">Get Started</a>
+                    <div class="uk-margin-medium-top uk-text-left@m" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600; repeat: true">
+                        <a href="#" class="uk-button uk-button-gradient uk-button-raised" uk-toggle="#request-demo-modal">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -413,9 +449,9 @@
 
     <div class="uk-container uk-text-center">
 
-        <h2 class="uk-heading-xsmall text-light">NextOrbit Mission</h2>
+        <h2 class="uk-heading-xsmall text-light" uk-scrollspy="cls: uk-animation-fade; repeat: true">NextOrbit Mission</h2>
 
-        <div class="uk-padding-large uk-text-large">
+        <div class="uk-padding-large uk-text-large" uk-scrollspy="cls: uk-animation-slide-bottom; delay:200; repeat: true">
             Enable enterprises of all sizes achieve and sustain credible competitive differentiation by the power of cloud, AI and Machine Learning
         </div>
     </div>
@@ -426,9 +462,9 @@
         
         <div class="uk-section uk-section-light" id="team">
     <div class="uk-container uk-text-center">
-        <h2 class="uk-heading-mini text-light uk-margin-medium-bottom">Our Team</h2>
+        <h2 class="uk-heading-mini text-light uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Our Team</h2>
 
-        <div class="uk-grid-large" uk-grid>
+        <div class="uk-grid-large" uk-grid uk-scrollspy="target: > div; cls: uk-animation-scale-up; delay:150; repeat: true">
             
                 <div class="uk-width-1-3 uk-width-1-5@m">
                     <img uk-img="data-src: assets/images/avatar.jpg" alt="Achilles Saxby" class="uk-border-circle">
@@ -528,88 +564,330 @@
 
         
         <div class="uk-section uk-section-secondary uk-padding-remove" id="footer">
+    <div class="uk-container uk-margin-top">
+        <div class="uk-grid-medium" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay:150; repeat: true">
 
-    <div class="uk-padding">
-        <div class="uk-container">
-            <div class="uk-grid-medium" uk-grid>
+            <div class="uk-width-1-2 uk-width-1-4@m">
+                <a class="uk-logo uk-flex uk-flex-middle" href="http://nextorbit.netlify.com">
+                    <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
+                    <span class="text-light uk-margin-small-left">NextOrbit</span>
+                </a>
 
-                <div class="uk-width-1-2 uk-width-1-4@m">
-                    <a class="uk-logo uk-flex uk-flex-middle" href="http://nextorbit.netlify.com">
-                        <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
-                        <span class="text-light uk-margin-small-left">NextOrbit</span>
-                    </a>
-
-                    <div id="footer-address" class="uk-margin-top text-xsmall">
-                        <div class="text-bold">Address:</div>
-                        <div class="text-light">
-                            <b>Texas</b> - 4512 Legacy Drive, Suite 100, Plano, TX 75024
-                        </div>
-                        <div class="text-light uk-margin-top">
-                            <b>New York</b> - 4512 Legacy Drive, Suite 100, Plano, TX 75024
-                        </div>
-                        <div class="text-light uk-margin-top">
-                            <b>Bangalore</b> - 2nd Floor, Salarpuria Tower -1,  No. 22, Industrial Layout, 7th Block, Koramangala, Bengaluru, Karnataka 560095
-                        </div>
+                <div id="footer-address" class="uk-margin-top text-xsmall">
+                    <div class="text-bold">Address:</div>
+                    <div class="text-light">
+                        <b>Texas</b> - 4512 Legacy Drive, Suite 100, Plano, TX 75024
                     </div>
-
-                </div>
-
-                <div class="uk-width-1-2 uk-width-1-4@m uk-flex-last@m">
-                    <h5 class="text-light uk-margin-small-bottom">Articles & Blogs</h5>
-                    <ul class="uk-list uk-list-divider uk-text-small">
-                        <li><a href="#">Retailing to E-tailing: In search for a symbiotic relationship</a></li>
-                        <li><a href="#">Impact of out-of-stocks on sales and customer satisfaction</a></li>
-                        <li><a href="#">Improvement in customer experience, in-stock position using AI...</a></li>
-                    </ul>
-                    <div class="uk-text-right uk-text-small">
-                        <a href="#">View All</a>
+                    <div class="text-light uk-margin-top">
+                        <b>New York</b> - 4512 Legacy Drive, Suite 100, Plano, TX 75024
                     </div>
-                </div>
-
-                <div class="uk-width-1-2 uk-width-1-4@m">
-                    <h5 class="uk-text-light uk-margin-small-bottom">Other links</h5>
-                    <ul class="uk-nav uk-nav-default footer-nav">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                    </ul>
-                </div>
-
-                <div class="uk-width-1-2 uk-width-1-4@m uk-flex-last@m">
-                    <h5 class="text-light uk-margin-small-bottom">Sign Up For Our Newsletter</h5>
+                    <div class="text-light uk-margin-top">
+                        <b>Bangalore</b> - 2nd Floor, Salarpuria Tower -1,  No. 22, Industrial Layout, 7th Block, Koramangala, Bengaluru, Karnataka 560095
+                    </div>
                 </div>
 
             </div>
+
+            <div class="uk-width-1-2 uk-width-1-4@m uk-flex-last@m">
+                <h5 class="text-light uk-margin-small-bottom">Articles & Blogs</h5>
+                <ul class="uk-list uk-list-divider text-xsmall">
+                    <li><a href="#">Retailing to E-tailing: In search for a symbiotic relationship</a></li>
+                    <li><a href="#">Impact of out-of-stocks on sales and customer satisfaction</a></li>
+                    <li><a href="#">Improvement in customer experience, in-stock position using AI...</a></li>
+                </ul>
+                <div class="uk-text-right uk-text-small">
+                    <a href="#" style="font-size:0.625rem">View All</a>
+                </div>
+            </div>
+
+            <div class="uk-width-1-2 uk-width-1-4@m">
+                <h5 class="text-light uk-margin-small-bottom">Other links</h5>
+                <ul class="uk-nav uk-nav-default footer-nav uk-text-small">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+
+            <div class="uk-width-1-2 uk-width-1-4@m uk-flex-last@m">
+                <h5 class="text-light uk-margin-small-bottom">Sign Up For Our Newsletter</h5>
+
+                <form action="#" id="newsletter-form" class="uk-margin-top">
+                    <div class="newsletter-form-group">
+                        <input type="text" class="uk-input" name="email" placeholder="Email Address">
+                        <button type="submit" class="uk-button uk-button-inverse uk-button-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
 
     <div class="uk-section uk-padding-small uk-text-center">
-        <div class="text-bold">&copy; 2019 NextOrbit</div>
-        
+        <div class="text-medium">&copy; 2019 NextOrbit</div>
     </div>
 </div>
 
         
-        <div id="request-demo-modal" class="uk-flex-top" uk-modal>
+        
 
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+<div id="request-demo-modal" class="uk-flex-top uk-modal-container" uk-modal>
+
+    <div class="uk-modal-dialog uk-modal-body">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
-        <h2 class="text-light uk-text-center" style="font-size:25px">Get Started</h2>
+        <h2 class="uk-heading-xsmall uk-text-center">Get Started</h2>
 
-        <div class="uk-grid-medium" uk-grid>
-            
-            <div class="uk-width-1-1 uk-width-1-2@m">
-                <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Pain Problems to Solve</h3>
-                <div class="uk-text-small uk-text-light">Select 3 problems</div>
-            </div>
+        
 
-            <div class="uk-width-1-1 uk-width-1-2@m">
-                <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Benefit Expected</h3>
-                <div class="uk-text-small uk-text-light">Select Top one or two</div>
-            </div>
+        <form action="#YOUR_ACTION" method="post" class="uk-margin-top uk-padding" id="request-demo-form">
+            <div class="uk-grid-medium" uk-grid>
+                
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Pain Problems to Solve</h3>
+                    <div class="uk-text-small uk-text-light">Select 3 problems</div>
+                    <div class="uk-margin-top">
+                        
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="over_stock" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Over Stock 
         </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="product_expiration" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Product Expiration
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="out_of_stock" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Out of Stock 
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="innefficiant_planning_for_growth_opportunities" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Innefficiant planning for growth opportunities
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="leaving_money_on_the_table_due_to_improper_markdown" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Leaving money on the table Due to Improper Markdown
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="cant_figure_out_latent_demand" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Cant Figure out latent Demand
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="what_more_merchandise_could_sell" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            What more merchandise could sell
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="food_wastage" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Food Wastage
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="not_responding_speedily_to_fashion_trends" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Not Responding Speedily to fashion Trends
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="over_exposure_to_competitor_pricing" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Over Exposure to Competitor Pricing
+        </div>
+    </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Benefit Expected</h3>
+                    <div class="uk-text-small uk-text-light">Select Top one or two</div>
+                    <div class="uk-margin-top">
+                        
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="benefit_expected[]" value="better_full_price_sell_through_less_discounting" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Better Full Price sell through (Less Discounting) 
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="benefit_expected[]" value="higher_osa_on_shelf_availability" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher OSA (on shelf Availability)
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="benefit_expected[]" value="higher_inventory_turns" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher Inventory Turns
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="benefit_expected[]" value="lower_store_or_dc_inventory" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Lower Store or DC inventory
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="benefit_expected[]" value="higher_basket_sizes" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher Basket Sizes
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="benefit_expected[]" value="higher_customer_loyality_more_repeat_visits" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher Customer Loyality (More Repeat visits)
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small">
+        <input type="checkbox" name="benefit_expected[]" value="more_effective_planning" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            More Effective Planning
+        </div>
+    </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid-medium" uk-grid>
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <div class="uk-margin form-input" data-label="Name">
+                        <input type="text" name="name" id="name" class="uk-input">
+                    </div>
+                    <div class="uk-margin form-input" data-label="Email Address">
+                        <input type="email" name="email" id="email" class="uk-input">
+                    </div>
+                    <div class="uk-margin form-input" data-label="Organisation">
+                        <input type="text" name="organisation" id="organisation" class="uk-input">
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <div class="uk-margin form-textarea uk-height-1-1" data-label="Message (Optional)">
+                        <textarea name="message" id="message" rows=6 class="uk-textarea uk-height-1-1"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-large-top uk-text-center uk-text-right@m">
+                <button class="uk-button uk-button-primary" name="submit" value="Submit" type="submit">Submit</button>
+            </div>
+        </form>
     
     </div>
 </div>
