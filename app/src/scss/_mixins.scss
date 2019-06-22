@@ -8,3 +8,39 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
+
+@mixin section-tilt {
+    position: relative;
+
+    padding-top: 0;
+
+    $modifications_tilt: (
+        primary: $primary,
+        secondary: $secondary,
+        success: $success,
+        warning: $warning,
+        muted: $muted,
+        info: $info,
+        danger: $danger,
+        default: $light,
+    );
+
+    @each $key, $color in $modifications_tilt{
+        &.uk-section-#{$key} {
+            &::before {
+                content: '';
+                display: block;
+                z-index: 1;
+                position: absolute;
+                @include svg-fill($tilted-section-shape, '#000', $color);
+                width: 100%;
+                height: 0px;
+                padding-top: 3%;
+                background-size: cover;
+                top: 0px;
+                transform: translateY(-99.99%);
+                left: 0px;
+            }
+        }
+    }
+}

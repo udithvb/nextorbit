@@ -11,13 +11,18 @@
                     <a class="feat-toggle-expand"><i class="fas fa-arrow-right"></i></a>
 
                     <div uk-grid>
-                        <div class="uk-width-auto">
+                        <div class="uk-width-auto uk-visible@m">
                             <div class="feat-icon">
                                 <img class="small svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/features/idm.svg">
                             </div>
                         </div>
                         <div class="uk-width-expand uk-text-left">
-                            <h3 class="uk-card-title">Intelligent Demand Planning</h3>
+                            <h3 class="uk-card-title uk-flex uk-flex-middle">
+                                <div class="feat-icon-small uk-margin-right uk-hidden@m">
+                                    <img class="small svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/features/idm.svg">
+                                </div>
+                                Intelligent Demand Planning
+                            </h3>
                             <p class="feat-text">
                                 <span class="line uk-text-justify">Machine Learning and Human Judgement - we help combine the best of both the worlds.</span>
                                 <ul class="uk-list uk-list-bullet text-light uk-text-small feat-list">
@@ -38,14 +43,18 @@
                     <a class="feat-toggle-expand"><i class="fas fa-arrow-right"></i></a>
 
                     <div uk-grid>
-                        <div class="uk-width-auto">
+                        <div class="uk-width-auto uk-visible@m">
                             <div class="feat-icon">
-                                <img class="small svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/features/ip.svg">
-                                {# <img class="small svg-icon" alt="Intelligent Prixing" uk-img="data-src: {{data.assets.images}}/svg_icons/ip.svg"> #}
+                                <img class="small svg-icon" alt="Intelligent Demand Planning" src="{{data.assets.images}}/svg_icons/features/ip.svg">
                             </div>
                         </div>
                         <div class="uk-width-expand uk-text-left">
-                            <h3 class="uk-card-title">Intelligent Pricing</h3>
+                            <h3 class="uk-card-title uk-flex uk-flex-middle">
+                                <div class="feat-icon-small uk-margin-right uk-hidden@m">
+                                    <img class="small svg-icon" alt="Intelligent Demand Planning" src="{{data.assets.images}}/svg_icons/features/ip.svg">
+                                </div>
+                                Intelligent Pricing
+                            </h3>
                             <p class="feat-text">
                                 <span class="line uk-text-justify">Better price realization to improve Sales & Margin.</span>
                                 <ul class="uk-list uk-list-bullet text-light uk-text-small feat-list">
@@ -62,7 +71,7 @@
                 </div>
             
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large" uk-scrollspy="target: > *; cls: uk-animation-fade; delay:500; repeat: true">
+            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large uk-visible@m" uk-scrollspy="target: > *; cls: uk-animation-fade; delay:500; repeat: true">
                 
                 <div id="feature-image-idm">
                     <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard_idm.png">
@@ -76,6 +85,10 @@
 
             </div>
 
+        </div>
+
+        <div class="uk-margin-top uk-text-center uk-hidden@m">
+            <a uk-scrollspy-class="uk-animation-slide-bottom-small" class="uk-button uk-button-gradient-outline uk-button-muted uk-margin-large-top" uk-toggle="#request-demo-modal">Request Demo</a>
         </div>
 
     </div>

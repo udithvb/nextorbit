@@ -8,30 +8,16 @@
 
                 <div class="uk-width-1-1 uk-width-1-2@m">
 
-                    <div class="uk-grid-medium uk-child-width-1-2" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-scale-down; delay:200; repeat: true">
-                        <div>
-                            <div class="uk-card uk-card-large uk-height-1-1 uk-card-small uk-card-body uk-card-tint uk-card-warning raised">
-                                <span class="text-medium">Onboarding Fee</span>
-                            </div>
-                        </div>
+                    <div class="uk-grid-small uk-child-width-1-2" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-scale-down; delay:200; repeat: true">
 
+                    {% for item in data.pricing %}
                         <div>
-                            <div class="uk-card uk-card-large uk-height-1-1 uk-card-small uk-card-body uk-card-tint uk-card-danger raised">
-                                <span class="text-medium">No contracts</span>
+                            <div class="pricing-card uk-card uk-card-small uk-flex uk-flex-middle uk-flex-center uk-card-small uk-card-body uk-card-tint uk-card-{{item.tint}} raised">
+                                <span class="text-medium">{{item.title}}</span>
                             </div>
                         </div>
-
-                        <div>
-                            <div class="uk-card uk-card-large uk-height-1-1 uk-card-small uk-card-body uk-card-tint uk-card-success raised">
-                                <span class="text-medium">Monthly Subscription Fee</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="uk-card uk-card-large uk-height-1-1 uk-card-small uk-card-body uk-card-tint uk-card-info raised">
-                                <span class="text-medium">Flexible</span>
-                            </div>
-                        </div>
+                    {% endfor %}
+                        
                     </div>
                 </div>
 

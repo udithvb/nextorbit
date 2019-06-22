@@ -1,6 +1,8 @@
 // import bootstrap js
 import "./bootstrap";
 
+// import "./particles"
+
 /*
 * You can add your custom JavaScript below.
 * You can either start writing the entire code below or

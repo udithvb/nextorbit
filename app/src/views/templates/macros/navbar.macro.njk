@@ -1,11 +1,25 @@
 {% macro nav(app, activePage = 'home') %}
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="navbar">
     <nav class="uk-navbar-container uk-container uk-navbar-transparent uk-navbar-fixed" uk-navbar="mode: click">
-        <div class="uk-navbar-left">
 
+        <!-- Mobile Part -->
+        <div class="uk-navbar-left uk-hidden@m">
             <div class="uk-navbar-left">
                 <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"></a>
             </div>
+        </div>
+
+        
+        <div class="uk-navbar-right uk-hidden@m">
+            <a href="{{app.url}}" class="uk-navbar-item uk-padding-remove">
+                <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
+            </a>
+        </div>
+        <!-- [x] Mobile Part -->
+
+        <!-- Desktop Part -->
+
+        <div class="uk-navbar-left uk-visible@m">
 
             <a href="{{app.url}}" class="uk-navbar-item uk-padding-remove uk-visible@m">
                 <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
@@ -16,9 +30,9 @@
 
         </div>
 
-        <div class="uk-navbar-right">
+        <div class="uk-navbar-right uk-visible@m">
 
-            <ul class="uk-navbar-nav uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true; offset: 80;" uk-scrollspy="target: > li; cls: uk-animation-slide-top-small; delay: 100">
+            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 80;" uk-scrollspy="target: > li; cls: uk-animation-slide-top-small; delay: 100">
                 {% include "partials/nav-links.partial.njk" %}
             </ul>
 
@@ -29,6 +43,8 @@
             </div>
             
         </div>
+        <!-- [x] Desktop Part -->
+
     </nav>
 </div>
 {%- endmacro %}

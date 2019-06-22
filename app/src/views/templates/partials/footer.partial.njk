@@ -2,13 +2,29 @@
     <div class="uk-container uk-margin-top">
         <div class="uk-grid-medium" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay:150; repeat: true">
 
+            <div class="uk-width-1-2 uk-width-1-4@m uk-hidden@m">
+                <a class="uk-logo uk-height-1-1 uk-flex uk-flex-middle" href="{{app.url}}">
+                    <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
+                    <span class="text-light uk-margin-small-left">{{app.title}}</span>
+                </a>
+            </div>
+
+            <div class="uk-width-1-2 uk-width-1-4@m uk-hidden@m">
+                <form action="#" class="newsletter-form mobile" class="uk-margin-top">
+                    <div class="newsletter-form-group">
+                        <input type="text" class="uk-input" name="email" placeholder="Email Address">
+                        <button type="submit" class="uk-button uk-button-inverse uk-button-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
             <div class="uk-width-1-2 uk-width-1-4@m">
-                <a class="uk-logo uk-flex uk-flex-middle" href="{{app.url}}">
+                <a class="uk-logo uk-flex uk-flex-middle uk-visible@m uk-margin-bottom" href="{{app.url}}">
                     <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
                     <span class="text-light uk-margin-small-left">{{app.title}}</span>
                 </a>
 
-                <div id="footer-address" class="uk-margin-top text-xsmall">
+                <div id="footer-address" class="text-xsmall">
                     <div class="text-bold">Address:</div>
                     <div class="text-light">
                         <b>Texas</b> - 4512 Legacy Drive, Suite 100, Plano, TX 75024
@@ -44,10 +60,10 @@
                 </ul>
             </div>
 
-            <div class="uk-width-1-2 uk-width-1-4@m uk-flex-last@m">
+            <div class="uk-width-1-2 uk-width-1-4@m uk-visible@m">
                 <h5 class="text-light uk-margin-small-bottom">Sign Up For Our Newsletter</h5>
 
-                <form action="#" id="newsletter-form" class="uk-margin-top">
+                <form action="#" class="newsletter-form desktop" class="uk-margin-top">
                     <div class="newsletter-form-group">
                         <input type="text" class="uk-input" name="email" placeholder="Email Address">
                         <button type="submit" class="uk-button uk-button-inverse uk-button-secondary">Submit</button>

@@ -1,4 +1,4 @@
-<div class="uk-section uk-section-default uk-section-tilt uk-padding-remove-top" id="benefits">
+<div class="uk-section uk-section-default uk-section-tilt@m" id="benefits">
 
     <div class="uk-container uk-text-center">
 
@@ -8,7 +8,7 @@
 
             {% for benefit in data.benefits %}
                 <div class="uk-width-1-2 uk-width-1-4@m uk-text-center">
-                    <div class="uk-card uk-card-default uk-card-body uk-height-1-1">
+                    <div class="uk-card uk-card-default uk-card-small uk-card-body uk-height-1-1 benefit-card">
                         <img class="svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/benefits/{{benefit.icon}}">
                         <div class="uk-margin-top caption uk-margin-top" title="{{benefit.text}}">
                             {{benefit.text}}

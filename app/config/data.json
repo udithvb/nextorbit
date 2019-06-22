@@ -42,7 +42,75 @@
       "text": "More Effective Planning"
     }
   ],
-
+  "pricing": [
+    {
+      "title": "Onboarding Fee",
+      "tint": "warning"
+    },
+    {
+      "title": "No contracts",
+      "tint": "danger"
+    },
+    {
+      "title": "Monthly Subscription Fee",
+      "tint": "success"
+    },
+    {
+      "title": "Flexible",
+      "tint": "info"
+    }
+  ],
+  "team": [
+    {
+      "name": "Kishore",
+      "designation": "CEO"
+    },
+    {
+      "name": "Srini",
+      "designation": "Director",
+      "department": "Platforms and Solutions"
+    },
+    {
+      "name": "Sudarson",
+      "designation": "Principal Data Scientist"
+    },
+    {
+      "name": "Asrar",
+      "designation": "Principal Data Scientist"
+    },
+    {
+      "name": "Achilles",
+      "designation": "Principal Data Scientist"
+    },
+    {
+      "name": "Mani",
+      "designation": "Lead Data Engineer"
+    },
+    {
+      "name": "Vishnu",
+      "designation": "Principal Engineer"
+    },
+    {
+      "name": "Sharadhi",
+      "designation": "Software Engineer"
+    },
+    {
+      "name": "Rajath",
+      "designation": "Software Engineer"
+    },
+    {
+      "name": "Udith",
+      "designation": "Software Engineer"
+    },
+    {
+      "name": "Anam",
+      "designation": "Data Analyst"
+    },
+    {
+      "name": "Anand",
+      "designation": "Member of Technical Staff"
+    }
+  ],
   "forms": {
     "request_demo": {
       "action": "#YOUR_ACTION",
