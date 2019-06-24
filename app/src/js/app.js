@@ -1,7 +1,7 @@
 // import bootstrap js
 import "./bootstrap";
 
-// import "./particles"
+import "./particles"
 
 /*
 * You can add your custom JavaScript below.
