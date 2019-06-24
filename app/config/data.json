@@ -62,58 +62,63 @@
   ],
   "team": [
     {
-      "name": "Kishore",
+      "name": "Kishore Rajgopal",
       "designation": "CEO",
       "image": "kishore.jpg"
     },
     {
-      "name": "Srini",
+      "name": "Srinivasan M.",
       "designation": "Director",
       "department": "Platforms and Solutions",
       "image": "srini.jpg"
     },
     {
-      "name": "Sudarson",
+      "name": "Sudarson M.",
       "designation": "Principal Data Scientist",
       "image": "sudarshan.jpg"
     },
     {
-      "name": "Achilles",
+      "name": "Achilles Saxby",
       "designation": "Principal Data Scientist",
       "image": "achilles.jpg"
     },
     {
-      "name": "Mani",
+      "name": "Manikandan TV",
       "designation": "Lead Data Engineer",
       "image": "mani.jpg"
     },
     {
-      "name": "Vishnu",
+      "name": "Vishnukiran KV",
       "designation": "Principal Engineer",
       "image": "vishnu.jpg"
     },
     {
-      "name": "Sharadhi",
+      "name": "Sharadhi N",
       "designation": "Software Engineer",
       "image": "saradi.jpg"
     },
     {
-      "name": "Rajath",
+      "name": "Rajath Rao",
       "designation": "Software Engineer",
       "image": "rajat.jpg"
     },
     {
-      "name": "Udith",
+      "name": "Udith VB",
       "designation": "Software Engineer",
       "image": "udith.jpg"
     },
     {
-      "name": "Anam",
+      "name": "Anam Iqba",
       "designation": "Data Analyst",
       "image": "anam.jpg"
     },
     {
-      "name": "Anand",
+      "name": "Tarooqh Ahmed",
+      "designation": "Software Engineer",
+      "image": "tarooqh.jpg"
+    },
+    {
+      "name": "Anand Kumar Chandran",
       "designation": "Member of Technical Staff",
       "image": "anand.jpg"
     }
