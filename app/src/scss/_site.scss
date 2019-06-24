@@ -393,7 +393,9 @@
     .footer-links {
         list-style-type: none;
         margin: 0;
+        padding: 0;
         display: flex;
+        justify-content: center;
         li a {
             font-size: 0.9rem;
             padding: 0 0.5rem;
