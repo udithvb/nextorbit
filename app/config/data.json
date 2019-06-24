@@ -63,52 +63,64 @@
   "team": [
     {
       "name": "Kishore",
-      "designation": "CEO"
+      "designation": "CEO",
+      "image": "kishore.jpg"
     },
     {
       "name": "Srini",
       "designation": "Director",
-      "department": "Platforms and Solutions"
+      "department": "Platforms and Solutions",
+      "image": "srini.jpg"
     },
     {
       "name": "Sudarson",
-      "designation": "Principal Data Scientist"
+      "designation": "Principal Data Scientist",
+      "image": "sudarshan.jpg"
     },
     {
       "name": "Asrar",
-      "designation": "Principal Data Scientist"
+      "designation": "Principal Data Scientist",
+      "image": "avatar.jpg"
     },
     {
       "name": "Achilles",
-      "designation": "Principal Data Scientist"
+      "designation": "Principal Data Scientist",
+      "image": "achilles.jpg"
     },
     {
       "name": "Mani",
-      "designation": "Lead Data Engineer"
+      "designation": "Lead Data Engineer",
+      "image": "mani.jpg"
     },
     {
       "name": "Vishnu",
-      "designation": "Principal Engineer"
+      "designation": "Principal Engineer",
+      "image": "vishnu.jpg"
     },
     {
       "name": "Sharadhi",
-      "designation": "Software Engineer"
+      "designation": "Software Engineer",
+      "image": "saradi.jpg"
     },
     {
       "name": "Rajath",
-      "designation": "Software Engineer"
+      "designation": "Software Engineer",
+      "image": "rajat.jpg"
     },
     {
       "name": "Udith",
-      "designation": "Software Engineer"
+      "designation": "Software Engineer",
+      "image": "avatar.jpg"
     },
     {
       "name": "Anam",
-      "designation": "Data Analyst"
+      "designation": "Data Analyst",
+      "image": "anam.jpg"
     },
     {
       "name": "Anand",
-      "designation": "Member of Technical Staff"
+      "designation": "Member of Technical Staff",
+      "image": "anand.jpg"
     }
   ],
   "forms": {
