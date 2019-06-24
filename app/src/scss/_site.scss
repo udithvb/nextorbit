@@ -96,6 +96,18 @@
     .uk-logo {
         color: $dark;
     }
+
+
+    .uk-navbar-container{
+
+        @media screen and (min-width: $breakpoint-medium) {
+            padding: 0 5rem;
+        }
+
+        .uk-navbar-sticky {
+            box-shadow: 0px 1px 10px transparentize($dark, 0.7);
+        }
+    }
 }
 
 /*============
@@ -372,6 +384,30 @@
         color: $light;
     }
 
+    .footer-links {
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        li a {
+            font-size: 0.9rem;
+            padding: 0 0.5rem;
+        }
+
+        li {
+            &::after {
+                content: '/';
+                color: $muted;
+                opacity: 0.5;
+            }
+
+            &:last-child {
+                &::after {
+                    content: ''
+                }
+            }
+        }
+    }
+
     // .footer-nav
     .footer-nav {
 
@@ -387,24 +423,10 @@
 
     #footer-address {
         color: $light;
+        line-height: 1.8;
     }
 
     .newsletter-form {
-
-        &.mobile {
-            .newsletter-form-group {
-                input, button.uk-button {
-                    font-size: 0.6rem;
-                    height: 30px;
-                    line-height: 30px;
-                }
-
-                button.uk-button {
-                    right: -5px;
-                    min-width: 75px;
-                }
-            }
-        }
 
         .newsletter-form-group {
             position: relative;
@@ -415,13 +437,14 @@
                 border-radius: 8px;
                 padding-right: 100px;
                 font-size: 0.75rem;
+                width: calc(100% - 25px)
             }
 
             button.uk-button {
                 font-size: 0.75rem;
                 position: absolute;
                 height: 40px;
-                right: -20px;
+                right: 0px;
                 top: 0;
                 line-height: 40px;
                 padding: 0;
