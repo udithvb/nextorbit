@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
+    "jquery.panzoom": "git+https://github.com/timmywil/panzoom.git",
     "particles.js": "^2.0.0",
     "uikit": "^3.1.2"
   }

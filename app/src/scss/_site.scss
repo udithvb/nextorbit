@@ -97,7 +97,7 @@
             padding: 0 5rem;
         }
 
-        .uk-navbar-sticky {
+        &.uk-navbar-sticky {
             box-shadow: 0px 1px 10px transparentize($dark, 0.7);
         }
     }
@@ -234,6 +234,16 @@
                 top: -7px;
                 border-radius: 50rem;
             }
+        }
+    }
+}
+
+#lightbox {
+    #zoom-in, #zoom-out, #zoom-reset {
+        background: $light;
+
+        &:hover {
+            color: $primary
         }
     }
 }

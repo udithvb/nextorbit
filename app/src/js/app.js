@@ -3,6 +3,8 @@ import "./bootstrap";
 
 import "./particles"
 
+import "./panzoom"
+
 /*
 * You can add your custom JavaScript below.
 * You can either start writing the entire code below or

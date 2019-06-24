@@ -2,8 +2,8 @@
     <div class="uk-container uk-text-center">
         <h2 class="uk-heading-xsmall text-light uk-margin-remove-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">How It Works</h2>
 
-        <div uk-lightbox>
-            <a href="{{data.assets.images}}/how_it_works.png" data-alt="How it works" uk-scrollspy="target: > img; cls: uk-animation-scale-up; delay: 100; repeat: true">
+        <div>
+            <a uk-toggle="target: #lightbox" data-alt="How it works" uk-scrollspy="target: > img; cls: uk-animation-scale-up; delay: 100; repeat: true">
                 <img alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/how_it_works.png" uk-responsive>
             </a>
         </div>
@@ -12,5 +12,22 @@
             <div class="uk-button uk-button-gradient-outline uk-button-tertiary uk-button-primary" uk-toggle="#request-demo-modal">Request Demo</div>
         </div>
 
+    </div>
+</div>
+
+<div id="lightbox" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog uk-position-relative uk-height-1-1" uk-height-viewport>
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-width-1-1 uk-padding uk-height-1-1 uk-flex uk-flex-middle" id="panzoom">
+            <img alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/how_it_works.png" class="uk-width-1-1">
+        </div>
+
+        <div id="controls" class="uk-position-medium uk-overlay uk-position-bottom-center uk-flex uk-flex-center">
+            <button class="uk-button uk-button-outline uk-button-primary uk-button-icon uk-margin-right" id="zoom-in"><i class="fas fa-search-plus"></i></button>
+            <div class="uk-button uk-button-outline uk-button-primary" id="zoom-reset">
+                RESET
+            </div>
+            <button class="uk-button uk-button-outline uk-button-primary uk-button-icon uk-margin-left" id="zoom-out"><i class="fas fa-search-minus"></i></button>
+    </div>
     </div>
 </div>

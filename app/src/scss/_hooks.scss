@@ -97,6 +97,45 @@
     }
 }
 
+@mixin hook-button-misc() {
+
+    .uk-button-group {
+
+        .uk-button {
+
+            border-radius: 0;
+            
+            &:nth-child(n+2) {
+                border-left: none;
+            }
+
+            &:first-child {
+                border-top-left-radius: 50rem;
+                border-bottom-left-radius: 50rem;
+            }
+
+            &:last-child {
+                border-top-right-radius: 50rem;
+                border-bottom-right-radius: 50rem;
+            }
+
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+
+    .uk-button-icon {
+        height: 50px;
+        min-width: 50px;
+        width: 50px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 // navbar
 
 // @mixin hook-navbar-item () {
