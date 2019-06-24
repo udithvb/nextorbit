@@ -37,13 +37,6 @@
     @include raised();
 }
 
-.caption {
-    font-size: 1rem;
-    @media screen and (min-width: $breakpoint-medium) {
-        font-size: 1rem;
-    }
-}
-
 #features, #how_it_works, #pricing, #team {
     padding-top: 30px;
 }
@@ -137,15 +130,18 @@
     }
 }
 
-// #benefits {
+#benefits {
 
-//     .benefit-card {
+    .benefit-card {
 
-//         @media screen and (max-width: $breakpoint-medium) {
-
-//         }
-//     }
-// }
+        .caption {
+            font-size: 0.8rem;
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
 
 // #parallax-shape {
 //     position: relative;
