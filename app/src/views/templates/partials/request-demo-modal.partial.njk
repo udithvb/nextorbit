@@ -6,7 +6,7 @@
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
-        <h2 class="uk-heading-xsmall uk-text-center">Get Started</h2>
+        <h2 class="uk-heading-xsmall uk-text-center uk-margin-remove-bottom">Get Started</h2>
 
         {% set req_form = data.forms.request_demo %}
 
@@ -16,7 +16,7 @@
                 <div class="uk-width-1-1 uk-width-1-2@m">
                     <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Pain Problems to Solve</h3>
                     <div class="uk-text-small uk-text-light">Select 3 problems</div>
-                    <div class="uk-margin-top">
+                    <div class="uk-margin-small-top">
                         {% set ppts = req_form.fields.pain_problem_to_solve %}
                         {% for check in ppts.options %}
                             {{forms.checkbox(ppts.name+"[]", check.value, false, check.label)}}
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-grid-medium" uk-grid>
+            <div class="uk-grid-medium uk-margin-small" uk-grid>
                 <div class="uk-width-1-1 uk-width-1-2@m">
                     <div class="uk-margin-small form-input" data-label="{{req_form.fields.name.label}}">
                         <input type="text" name="{{req_form.fields.name.name}}" id="{{req_form.fields.name.name}}" class="uk-input">
@@ -49,7 +49,7 @@
                 </div>
                 <div class="uk-width-1-1 uk-width-1-2@m">
                     <div class="uk-margin-small form-textarea uk-height-1-1" data-label="{{req_form.fields.message.label}}">
-                        <textarea name="{{req_form.fields.message.name}}" id="{{req_form.fields.message.name}}" rows=6 class="uk-textarea uk-height-1-1"></textarea>
+                        <textarea name="{{req_form.fields.message.name}}" id="{{req_form.fields.message.name}}" rows=4 class="uk-textarea uk-height-1-1"></textarea>
                     </div>
                 </div>
             </div>
