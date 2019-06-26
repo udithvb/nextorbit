@@ -1,0 +1,10 @@
+{% import "macros/slider.macro.njk" as slider %}
+
+<div class="uk-section uk-section-tertiary" id="advisors">
+    <div class="uk-container uk-text-center">
+        <h2 class="uk-heading-mini text-light uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Our Advisors</h2>
+
+        {{ slider.people('advisors', data.advisors, data) }} 
+
+    </div>
+</div>

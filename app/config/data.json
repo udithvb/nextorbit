@@ -80,7 +80,7 @@
     {
       "name": "Achilles Saxby",
       "designation": "Principal Data Scientist",
-      "image": "achilles.jpg"
+      "image": "achillies.jpg"
     },
     {
       "name": "Manikandan TV",
@@ -121,6 +121,28 @@
       "name": "Anand Kumar Chandran",
       "designation": "Member of Technical Staff",
       "image": "anand.jpg"
+    },
+    {
+      "name": "Bernard Anderson",
+      "designation": "Principal Consultant",
+      "image": "bernard.jpg"
+    },
+    {
+      "name": "Rob Van Den Boogaard",
+      "designation": "Senior Consultant",
+      "image": "rob.jpg"
+    }
+  ],
+  "advisors": [
+    {
+      "name": "Win Weber",
+      "designation": "Strategic Alliance Partner",
+      "image": "win.jpg"
+    },
+    {
+      "name": "Bill Homa",
+      "designation": "Advisor – Retail",
+      "image": "bill.jpg"
     }
   ],
   "forms": {
