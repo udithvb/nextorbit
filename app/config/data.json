@@ -146,8 +146,8 @@
     }
   ],
   "forms": {
-    "request_demo": {
-      "action": "#YOUR_ACTION",
+    "get_started": {
+      "action": "#YOUR_GET_STARTED_ACTION",
       "fields": {
         "pain_problem_to_solve": {
           "name": "pain_problem_to_solve",
@@ -244,6 +244,19 @@
           "label": "Message (Optional)"
         }
       }
+    },
+    "newsletter": {
+      "action": "#YOUR_NEWSLETTER_ACTION",
+      "fields": {
+        "email": {
+          "name": "email"
+        }
+      }
     }
+  },
+  "links": {
+    "blog": "#YOUR_BLOG_LINK",
+    "terms": "#YOUR_TERMS_LINK",
+    "accessibility": "#YOUR_ACCESSIBILITY_LINK"
   }
 }

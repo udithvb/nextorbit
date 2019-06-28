@@ -53,10 +53,10 @@
 
             <div class="uk-width-1-1 uk-width-1-4@m uk-flex-last@m">
                 <h5 class="text-light uk-margin-small-bottom">Sign Up For Our Newsletter</h5>
-
-                <form action="#" class="newsletter-form desktop" class="uk-margin-top">
+                {% set newsletter = data.forms.newsletter %}
+                <form action="{{newsletter.action}}" class="newsletter-form desktop" class="uk-margin-top">
                     <div class="newsletter-form-group">
-                        <input type="text" class="uk-input" name="email" placeholder="Email Address">
+                        <input type="text" class="uk-input" name="{{newsletter.fields.email.name}}" placeholder="Email Address">
                         <button type="submit" class="uk-button uk-button-inverse uk-button-secondary">Submit</button>
                     </div>
                 </form>
@@ -66,9 +66,9 @@
 
         <div class="uk-padding-small uk-margin-top uk-hidden@m">
             <ul class="footer-links">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Accessibility</a></li>
+                <li><a href="{{data.links.blog}}">Blog</a></li>
+                <li><a href="{{data.links.terms}}">Terms of Use</a></li>
+                <li><a href="{{data.links.accessibility}}">Accessibility</a></li>
             </ul>
         </div>
     </div>
