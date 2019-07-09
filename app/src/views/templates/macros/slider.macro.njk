@@ -11,7 +11,7 @@
 {% endmacro %}
 
 {% macro people(id, members, data) %}
-    <div uk-slider="sets: true; finite: true;">
+    <div uk-slider="{sets: true; infinite: false; finite: true}">
         <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-flex-center uk-grid">
             {% for member in members %}
                 <li class="team-member">
