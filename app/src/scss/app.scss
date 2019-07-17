@@ -54,5 +54,8 @@
 // You can either write the complete code there or
 // Split the styling to modules and import them seperately.
 
+// import slick
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
 
 @import "./site";

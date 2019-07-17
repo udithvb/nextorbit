@@ -178,7 +178,7 @@
 @mixin hook-card-misc () {
 
     .uk-card-tint {
-        border-left: 12px solid $dark;
+        border-top: 12px solid $dark;
 
         @each $key, $color in $modifications{
             &.uk-card-#{$key} {

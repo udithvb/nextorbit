@@ -9,3 +9,6 @@ import Icons from "uikit/dist/js/uikit-icons";
 UIKit.use(Icons);
 
 window.UIKit = UIKit;
+
+// slick
+import "slick-carousel"

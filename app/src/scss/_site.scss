@@ -83,6 +83,22 @@
     SITE
 ===========*/
 
+#hero {
+
+    // graph
+    .graphs_vb {
+        width: 100%;
+        height: 400px;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            height: 450px;
+            width: 550px;
+            overflow: hidden;
+            transform: scale(0.75, 0.75);
+        }
+    }
+}
+
 
 #navbar {
 
@@ -254,23 +270,37 @@
     @include raised();
     position: relative;
 
+    height: 100%;
+
     .feat-list {
         animation: uk-fade-top-small 0.4s ease-in;
+        text-align: left;
+        font-size: 0.75rem;
     }
 
     .feat-text {
-        font-weight: 300;
+        font-weight: 400;
+        font-size: 0.8rem;
+
     }
 
-    .feat-toggle-expand {
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-        color: transparentize($dark, 0.8);
-        
-        transform: rotate(-135deg);
+    .feat-head {
+        @media screen and (min-width: $breakpoint-medium) {
+            display: flex;
+            flex-direction: column;
+            height: 180px;
+            .feat-text {
+                margin: auto 0;
+            }
+        }
+    }
 
-        transition: all 0.3s ease-in-out;
+    .feat-title {
+        font-size: 1rem;
+    }
+
+    .feat-list {
+        font-weight: 300;
     }
 
     .feat-icon-small {
@@ -278,33 +308,16 @@
             width: 50px;
         }
     }
+}
 
-    &.closed {
-        // background: transparent;
-        // border: none;
-        // box-shadow: none !important;
+// What We Solve
 
-        .feat-list {
-            display: none;
-        }
+#what_we_solve {
 
-        .feat-toggle-expand {
-            color: $primary;
-            transform: rotate(45deg);
-        }
+    .wws-card {
+        @include raised();
 
-        // .feat-icon {
-        //     @include coin-tile();
-        //     cursor: pointer;
-        // }
-
-        // .feat-text {
-        //     font-weight: 400;
-        // }
-
-        // [uk-grid] {
-        //     align-items: center;
-        // }
+        height: 100%;
     }
 }
 
@@ -320,6 +333,8 @@
 // PRICING
 #pricing {
 
+    background: #F8F8F8;
+
     .pricing-card {
         font-size: 0.8rem;
         height: 100px;
@@ -332,9 +347,47 @@
 }
 
 /// TEAM
-// #team {
+.team-member {
     
-// }
+    box-sizing: border-box;
+    padding: 1rem;
+
+    img {
+        width: 100%;
+    }
+
+    .member-designation {
+        font-size: 0.6rem;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            font-size: 1rem;
+        }
+    }
+}
+
+// Slider
+.people-slider {
+
+    position: relative;
+
+    .slider-control {
+
+        position: absolute;
+        top: 40%;
+
+        &.next {
+            right: -10px;
+        }
+
+        &.prev {
+            left: -10px;
+        }
+
+        &.slick-disabled {
+            opacity: 0.3;
+        }
+    }
+}
 
 // MODAL
 #request-demo-modal {

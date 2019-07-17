@@ -15,24 +15,30 @@ import "./panzoom"
 * Use bootstrap.js to require node packages.
 */
 
-$("#feat_idm, #feat_ip").click(() => {
+// $("#feat_idm, #feat_ip").click(() => {
     
-    if ($('#feat_idm').hasClass('closed')) {
-        $("#feat_ip").addClass("closed");
-        $("#feat_idm").removeClass("closed");
+//     if ($('#feat_idm').hasClass('closed')) {
+//         $("#feat_ip").addClass("closed");
+//         $("#feat_idm").removeClass("closed");
 
-        $("#feature-image-idm").removeClass("uk-hidden")
-        $("#feature-image-ip").addClass("uk-hidden")
-    }
+//         $("#feature-image-idm").removeClass("uk-hidden")
+//         $("#feature-image-ip").addClass("uk-hidden")
+//     }
 
-    else {
-        $("#feat_idm").addClass("closed");
-        $("#feat_ip").removeClass("closed");
+//     else {
+//         $("#feat_idm").addClass("closed");
+//         $("#feat_ip").removeClass("closed");
 
-        $("#feature-image-ip").removeClass("uk-hidden")
-        $("#feature-image-idm").addClass("uk-hidden")
-    }
-})
+//         $("#feature-image-ip").removeClass("uk-hidden")
+//         $("#feature-image-idm").addClass("uk-hidden")
+//     }
+// })
+
+/*
+ |------------------------------------------
+ | Custom Form Inputs
+ |------------------------------------------
+*/
 
 // custom checkbox
 $('.custom-checkbox').each((i, el) => {
@@ -81,3 +87,44 @@ $('.form-input, .form-textarea').each((i,el) => {
 
     });
 });
+
+
+/*
+ |------------------------------------------
+ | Slider
+ |------------------------------------------
+*/
+
+$('.people-slider').slick({
+    dots            : true,
+    infinite        : false,
+    speed           : 300,
+    slidesToShow    : 5,
+    slidesToScroll  : 5,
+    adaptiveHeight  : true,
+    nextArrow       : `<a href="#" class="slider-control next"><i class="fas fa-arrow-circle-right"></i></a>`,
+    prevArrow       : `<a href="#" class="slider-control prev"><i class="fas fa-arrow-circle-left"></i></a>`,
+    responsive  : [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+            }
+        },
+        {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
+    ]
+})

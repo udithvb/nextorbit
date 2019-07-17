@@ -2,86 +2,96 @@
     <div class="uk-container uk-text-center">
         <h2 class="uk-heading-xsmall text-light uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; repeat: true">Features</h2>
 
-        <div class="uk-grid-large uk-flex-middle" uk-grid>
+        <div class="uk-grid-large" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium; delay:300; repeat: true" uk-grid>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large@m" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium; delay:300; repeat: true">
+            <div class="uk-width-1-1 uk-width-1-3@m uk-padding-large@m">
 
                 <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-danger" id="feat_idm">
 
-                    <a class="feat-toggle-expand"><i class="fas fa-arrow-right"></i></a>
-
-                    <div uk-grid>
-                        <div class="uk-width-auto uk-visible@m">
-                            <div class="feat-icon">
-                                <img class="small svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/features/idm.svg">
-                            </div>
-                        </div>
-                        <div class="uk-width-expand uk-text-left">
-                            <h3 class="uk-card-title uk-flex uk-flex-middle">
-                                <div class="feat-icon-small uk-margin-right uk-hidden@m">
-                                    <img class="small svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/features/idm.svg">
-                                </div>
-                                Intelligent Demand Planning
-                            </h3>
-                            <p class="feat-text">
-                                <span class="line uk-text-justify">Machine Learning and Human Judgement - we help combine the best of both the worlds.</span>
-                                <ul class="uk-list uk-list-bullet text-light uk-text-small feat-list">
-                                    <li>Demand Planning</li>
-                                    <li>Store Ordering</li>
-                                    <li>Procurement Recommendations</li>
-                                    <li>Shelf Space Allocation & Optimisation</li>
-                                    <li>Intelligent store ordering to enhance sales & Margins.</li>
-                                </ul>
-                            </p>
-                        </div>
-
+                    <div class="feat-icon-small">
+                        <img class="small svg-icon" alt="Intelligent Demand Planning" uk-img="data-src: {{data.assets.images}}/svg_icons/features/idm.svg">
                     </div>
-                </div>
 
-                <div class="uk-margin-top uk-card uk-card-small uk-card-body uk-card-tint uk-card-success closed" id="feat_ip">
+                    <div class="feat-head">
+                        <h3 class="feat-title uk-card-title uk-margin-remove">
+                            Intelligent Demand Forecasting
+                        </h3>
 
-                    <a class="feat-toggle-expand"><i class="fas fa-arrow-right"></i></a>
-
-                    <div uk-grid>
-                        <div class="uk-width-auto uk-visible@m">
-                            <div class="feat-icon">
-                                <img class="small svg-icon" alt="Intelligent Demand Planning" src="{{data.assets.images}}/svg_icons/features/ip.svg">
-                            </div>
-                        </div>
-                        <div class="uk-width-expand uk-text-left">
-                            <h3 class="uk-card-title uk-flex uk-flex-middle">
-                                <div class="feat-icon-small uk-margin-right uk-hidden@m">
-                                    <img class="small svg-icon" alt="Intelligent Demand Planning" src="{{data.assets.images}}/svg_icons/features/ip.svg">
-                                </div>
-                                Intelligent Pricing
-                            </h3>
-                            <p class="feat-text">
-                                <span class="line uk-text-justify">Better price realization to improve Sales & Margin.</span>
-                                <ul class="uk-list uk-list-bullet text-light uk-text-small feat-list">
-                                    <li>Better product valuation</li>
-                                    <li>Differential pricing strategies</li>
-                                    <li>Promotions Recommendations</li>
-                                    <li>Competitor price monitoring & alerts</li>
-                                    <li>Markdown recommendations</li>
-                                </ul>
-                            </p>
-                            
-                        </div>
+                        <p class="feat-text">
+                            Machine Learning and Human Judgement - we help Combine the best of both the worlds. Decisions are delivered daily, weekly, monthly & quarterly.
+                        </p>
                     </div>
+
+                    <div class="feat-list uk-text-left">
+                        <ul class="uk-list uk-list-bullet text-light uk-text-small feat-list">
+                            <li>Demand Planning</li>
+                            <li>Store Ordering</li>
+                            <li>Vendor Purchase Order Triggers</li>
+                            <li>Predictive OOS(Out of Stock) Alerts</li>
+                            <li>Continuous Refinement of Decisions</li>
+                        </ul>
+                    </div>
+
                 </div>
             
             </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large uk-visible@m" uk-scrollspy="cls: uk-animation-fade; delay:500; repeat: true">
-                
-                <div id="feature-image-idm">
-                    <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard_idm.png">
+
+            <div class="uk-width-1-1 uk-width-1-3@m uk-padding-large@m">
+
+                <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-success" id="feat_ip">
+                    <div class="feat-icon-small">
+                        <img class="small svg-icon" alt="Intelligent Demand Planning" src="{{data.assets.images}}/svg_icons/features/ip.svg">
+                    </div>
+                    
+                    <div class="feat-head">
+                        <h3 class="feat-title uk-card-title uk-margin-remove">
+                            Intelligent Pricing
+                        </h3>
+
+                        <p class="feat-text">
+                            Machine Learning and Human Judgement - we help Combine the best of both the worlds. Decisions are delivered daily, weekly, monthly & quarterly.
+                        </p>
+                    </div>
+
+                    <div class="feat-list">
+                        <ul class="uk-list uk-list-bullet text-light uk-text-small feat-list">
+                            <li>Differential pricing strategies</li>
+                            <li>Promotions Recommendations</li>
+                            <li>Competitor price monitoring & alerts</li>
+                            <li>Markdown recommendations</li>
+                            <li>Continuous Improvement of algorithms & decisions</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div id="feature-image-ip" class="uk-hidden">
-                    <img alt="Intelligent Pricing" src="{{data.assets.images}}/dashboard_ip.png">
-                </div>
+            </div>
 
-                <a uk-scrollspy-class="uk-animation-slide-bottom-small" class="uk-button uk-button-gradient-outline uk-button-muted uk-margin-large-top" uk-toggle="#request-demo-modal">Request Demo</a>
+            <div class="uk-width-1-1 uk-width-1-3@m uk-padding-large@m">
+
+                <div class="uk-card uk-card-small uk-card-body uk-card-tint uk-card-info" id="feat_ip">
+                    <div class="feat-icon-small">
+                        <img class="small svg-icon" alt="Intelligent Demand Planning" src="{{data.assets.images}}/svg_icons/features/ip.svg">
+                    </div>
+
+                    <div class="feat-head">
+                        <h3 class="feat-title uk-card-title uk-margin-remove">
+                            PriceEye – Competitor Price Monitoring platform
+                        </h3>
+
+                        <p class="feat-text">
+                            The NextOrbit AI/Machine Learning-enabled competitor price monitoring platform uses atleast a dozen attributes to identify similar or substitutable items, and retrieves their pricing and in-stock status multiple times in a day. PriceEye help you to:
+                        </p>
+                    </div>
+
+                    <div class="feat-list">
+                        <ul class="uk-list uk-list-bullet text-light uk-text-small feat-list">
+                            <li>Get real-time competition pricing insight</li>
+                            <li>Identify subsitituable /similar products with a “similarity” score</li>
+                            <li>Analyze /slide & dice historical competitor pricing</li>
+                            <li>Optimize Pricing strategies</li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
 
