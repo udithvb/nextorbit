@@ -312,6 +312,15 @@
     border: none;
 }
 
+@mixin hook-dotnav-item() {
+
+    border: 1px solid $primary;
+}
+
+@mixin hook-dotnav-item-active {
+    transition: all 0.2s ease-in-out;
+}
+
 //// MODAL ////////////////////////
 
 @mixin hook-modal-dialog() {
@@ -326,16 +335,4 @@
 @mixin hook-modal-close-default() {
     color: $danger;
     box-shadow: 0px 2px 11px 4px rgba(#cacaca, 0.5)
-}
-
-// dot nav
-
-@mixin hook-dotnav-item() {
-
-    border: 1px solid $primary;
-}
-
-@mixin hook-dotnav-item-active {
-    transform: rotate(45deg);
-    transition: all 0.2s ease-in-out;
 }

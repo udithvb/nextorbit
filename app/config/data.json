@@ -8,6 +8,28 @@
     "images": "assets/images",
     "icons": "assets/icons"
   },
+  "slideshow": [
+    {
+      "image": "image (1).png",
+      "content": "Delivered a sales uplift of 14% for an American brand of casual apparel due to better pricing…"
+    },
+    {
+      "image": "image (2).png",
+      "content": "Caused a sales lift of 4% in the face of 11% degrowth for an online European retailer…"
+    },
+    {
+      "image": "image (3).png",
+      "content": "Better demand forecasting enables better utilization of capital at a leading Middle East Retailer…"
+    },
+    {
+      "image": "image (4).png",
+      "content": "Intelligent competitor price monitoring enabled better responsiveness to competition at a Middle East Retailer"
+    },
+    {
+      "image": "image (5).png",
+      "content": "Discovered lost sales opportunity of 11% on the shirts category of an Indian men’s apparel brand across its network of 100+ stores.."
+    }
+  ],
   "benefits": [
     {
       "icon": "hit.svg",

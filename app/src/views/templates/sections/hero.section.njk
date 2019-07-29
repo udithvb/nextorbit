@@ -1,53 +1,41 @@
-<div class="uk-section uk-section-default uk-flex uk-flex-column" id="hero" uk-height-viewport="offset-top: true">
-    <div class="uk-container uk-text-center uk-height-1-1">
+<div class="uk-section uk-padding-remove" id="hero" uk-height-viewport="offset-top: true">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true;">
 
-        <h1 class="uk-heading-xsmall heading-hero" uk-scrollspy="cls: uk-animation-fade;">
-            Optimizing Business Decisions Everyday using AI, ML & External Data.
-        </h1>
-        <p class="uk-margin-remove-bottom text-light">
-            Demand Forecasting, Pricing For Profit, Competitor Price Monitoring.
-        </p>
+        <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true">
+            {% for slide in data.slideshow %}
+                <li>
+                    <img src="{{data.assets.images}}/slideshow/{{slide.image}}" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle">
+                        <div class="slideshow-slide-content uk-width-1-1 uk-width-3-5@m">
+                            <h2 class="slideshow-heading uk-margin-remove-bottom">
+                                Pricing For Profit, Competitor & Price Discovery, Demand Forecasting.
+                            </h2>
+                            <h3 class="slideshow-subheading uk-margin-remove-top">Enabled By AI & Machine Learning</h3>
 
-        <div class="uk-flex-middle uk-grid-collapse" uk-grid>
+                            <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay:600;">
+                                <span class="slideshow-content">
+                                    {{slide.content}}
+                                </span>
+                            </div>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                <iframe class="graphs_vb" src="https://cdn.nextorbit.com/charts/demo-1-annotate_1.html" scrolling="no"></iframe>
-            </div>
+                            <div class="uk-margin-top" uk-scrollspy="cls: uk-animation-slide-bottom-small;delay: 700;">
+                                <a href="#" class="uk-button uk-button-gradient">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
 
-            <div class="uk-width-1-1 uk-width-1-2@m uk-clearfix" uk-scrollspy="cls: uk-animation-scale-up;">
-                <iframe class="graphs_vb" src="https://cdn.nextorbit.com/charts/demo-5-annotate.html" scrolling="no"></iframe>
-            </div>
+        <div class="slideshow-dots uk-position-center-right">
+            <ul class="uk-slideshow-nav uk-dotnav uk-dotnav-vertical"></ul>
         </div>
 
-        <div class="uk-child-width-1-2 uk-child-width-1-4@m" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-left-small; delay: 200">
-            <div class="uk-text-center">
-                <div class="uk-border-rounded border-danger uk-padding-small uk-height-1-1">
-                    Demand Forecasting
-                </div>
-            </div>
+    </div>
+</div>
 
-            <div class="uk-text-center">
-                <div class="uk-border-rounded border-success uk-padding-small uk-height-1-1">
-                    Cadence of Price Markdowns
-                </div>
-            </div>
-
-            <div class="uk-text-center">
-                <div class="uk-border-rounded border-warning uk-padding-small uk-height-1-1">
-                    Predictive Alerts
-                </div>
-            </div>
-
-            <div class="uk-text-center">
-                <div class="uk-border-rounded border-info uk-padding-small uk-height-1-1">
-                    Supplier PO Triggers
-                </div>
-            </div>
-        </div>
-
+{# 
         <div class="uk-margin-top" uk-scrollspy="cls: uk-animation-slide-bottom-small;delay:300;">
             <a href="#" class="uk-button uk-button-gradient uk-button-raised">Learn More</a>
         </div>
-        
-    </div>
-</div>
+ #}

@@ -69,8 +69,9 @@ $logo-font-family: 'Nunito', sans-serif;
 $logo-font-size: 26px;
 
 // dotnav
-$dotnav-item-width: 12px;
-$inverse-dotnav-item-background: rgba(255,255,255,0.35);
+$dotnav-item-width: 10px;
+$inverse-dotnav-item-background: rgba(255,255,255,0.3);
+$dotnav-item-background:                         $light;
 
 // modal
 $modal-background: rgba(#5e5e5e, 0.36);
@@ -85,14 +86,6 @@ $container-max-width: 1100px;
 
 // lightbox
 $lightbox-background: $light;
-
-// dotnav
-$dotnav-item-border-radius: 2px;
-
-$dotnav-item-background:                         $light;
-$dotnav-item-hover-background:                   $primary;
-$dotnav-item-onclick-background:                 $light;
-$dotnav-item-active-background:                  $primary;
 
 // => Add your own theming variables below //
 
@@ -117,3 +110,6 @@ $modifications: (
     danger: $danger,
     default: $dark,
 );
+
+// overlay
+$overlay-primary-background: rgba(0,0,0,0.8);
