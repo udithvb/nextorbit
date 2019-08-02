@@ -1,20 +1,21 @@
 <li>
-    <a href="{{app.url}}#about">About</a>
+    <a href="{% if absolute %}{{app.url}}{% endif %}#about">About</a>
+</li>
+
+<li>
+    <a href="{% if absolute %}{{app.url}}{% endif %}#features">Features</a>
 </li>
 <li>
-    <a href="{{app.url}}#features">Features</a>
+    <a href="{% if absolute %}{{app.url}}{% endif %}#benefits">Benefits</a>
 </li>
 <li>
-    <a href="{{app.url}}#benefits">Benefits</a>
+    <a href="{% if absolute %}{{app.url}}{% endif %}#how_it_works">How It Works</a>
 </li>
 <li>
-    <a href="{{app.url}}#how_it_works">How It Works</a>
+    <a href="{% if absolute %}{{app.url}}{% endif %}#what_we_solve">What We Solve</a>
 </li>
 <li>
-    <a href="{{app.url}}#what_we_solve">What We Solve</a>
-</li>
-<li>
-    <a href="{{app.url}}#team">Team</a>
+    <a href="{% if absolute %}{{app.url}}{% endif %}#team">Team</a>
 </li>
 <li>
     <a href="{{app.url}}/blog.html">Blog</a>
