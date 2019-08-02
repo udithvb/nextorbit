@@ -678,6 +678,10 @@
     .article-meta {
         font-size: 0.75rem;
     }
+
+    .article-actions {
+        font-weight: 600;
+    }
 }
 
 .article-list {
@@ -702,6 +706,48 @@
             width: 20%;
             height: 4px;
             background: $muted;
+        }
+    }
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @media screen and (min-width: $breakpoint-medium){
+        font-size: 2rem;
+    }
+}
+
+.blog-summary {
+    font-size: 1rem;
+    font-weight: 300;
+
+    @media screen and (min-width: $breakpoint-medium){
+        font-size: 1.625rem;
+    }
+}
+
+.blog-meta {
+
+    font-size: 0.75rem;
+
+    @media screen and (min-width: $breakpoint-medium){
+        font-size: 0.9rem;
+    }
+}
+
+.comments {
+
+    .comment {
+
+        .author-name {
+            font-size: 0.8125rem;
+            font-weight: 600;
+        }
+
+        .comment-text {
+            font-weight: 300;
         }
     }
 }

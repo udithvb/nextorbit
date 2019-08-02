@@ -1,0 +1,81 @@
+{% extends "layouts/app.layout.njk" %}
+
+{% block content %}
+
+    {# Blog macros #}
+    {% import "macros/blog.macro.njk" as blog %}
+
+    <div id="bodyWrapper">
+
+        {# Hamburger #}
+        {% include "partials/hamburger-menu.partial.njk" %}
+
+        {# Navbar #}
+        {% import "macros/navbar.macro.njk" as navbar %}
+        {{ navbar.nav(app, 'home') }}
+
+         <div class="uk-section uk-section-default uk-padding-remove uk-margin-top uk-margin-bottom">
+            <div class="uk-container">
+
+                <div class="uk-grid-large" uk-grid>
+
+                    {# Post #}
+
+                    <div class="uk-width-1-1 uk-width-2-3@m">
+                        <div class="blog-header">
+                            <h1 class="blog-title uk-margin-remove-bottom">NextOrbit discovered a sales improvement.</h1>
+                            <h2 class="blog-summary uk-margin-remove-top">Opportunity of 11% in the men’s category at a leading fashion retailer.</h2>
+                        </div>
+                        <div class="blog-meta uk-margin-top uk-margin-bottom">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="{{data.assets.images}}/avatar.png" alt="Kishore">
+                                </div>
+                                <div class="uk-width-expand uk-margin-right">
+                                    <div class="text-bold">Kishore Rajagopal</div>
+                                    <div class="text-light">Jul 18 ·</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-image">
+                            <img src="{{data.assets.images}}/slideshow/image (1).png" alt="NextOrbit discovered a sales improvement">
+                        </div>
+                        <div class="blog-body uk-margin-top uk-text-small uk-text-justify">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique obcaecati nostrum mollitia quos, libero rerum corrupti repellendus reiciendis pariatur. Nisi asperiores, veritatis tempore rem adipisci corrupti harum omnis nobis repellat nemo similique temporibus, autem corporis.
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde quis fugit autem ut ad corporis harum hic odio asperiores dignissimos. Odit quasi odio explicabo minima, error vel vitae perferendis aut incidunt magni doloremque perspiciatis at quae, ex, et asperiores ut ea. Eum sint qui inventore adipisci quasi exercitationem. Eligendi quam inventore quisquam est quasi minus nobis architecto, a ex dolore eius obcaecati voluptatum nulla reiciendis eum quae nesciunt in laborum qui! Sunt velit sed eius soluta labore itaque ipsam explicabo odio. Voluptate sit delectus deleniti repellat aliquam dignissimos non necessitatibus, id et veniam harum hic, corrupti facere laborum? Dolor eveniet, quam delectus nobis distinctio laudantium?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta impedit possimus consectetur consequuntur suscipit, illum delectus commodi voluptatum ex molestias provident neque. Nemo perspiciatis beatae debitis reprehenderit molestiae dignissimos vitae in! Atque quis officiis architecto molestias officia ea qui impedit fugit eveniet quaerat, tempore similique voluptatem consectetur est aliquam. Cupiditate odit obcaecati magnam vel, velit repudiandae nemo, commodi aspernatur provident dolor error vero laboriosam eaque tempore quae neque cumque sed voluptatum at. Assumenda repellendus iusto excepturi odio ab odit illo, ipsa aspernatur, laudantium minus obcaecati aliquid minima. In obcaecati alias eligendi explicabo perferendis, distinctio accusamus consequuntur molestias velit earum aliquam aspernatur deserunt suscipit reprehenderit doloribus illo, minima tempore assumenda id nesciunt neque. Quos temporibus voluptate doloribus deserunt libero esse, tempore alias nam dolor eligendi sit placeat non, ab provident modi optio assumenda, vitae ipsam repudiandae!
+                            </p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quisquam dolore, atque itaque ipsum quas debitis eligendi, fuga accusamus cumque quasi nostrum! Doloremque minima iure perferendis assumenda quo mollitia ab vero asperiores explicabo? Aperiam voluptate asperiores quibusdam quam numquam omnis fuga! Nihil architecto iste qui suscipit illo esse dolore tenetur non aperiam necessitatibus repellendus veritatis, reiciendis voluptatibus odio cum alias minima hic excepturi vel dolorum quidem quas unde voluptates! Enim minus provident quisquam adipisci in?
+                            </p>
+                        </div>
+
+                        {% include "partials/blog-comments.partial.njk" %}
+
+                    </div> 
+
+                    {# /Post #}
+
+                    <div class="uk-width-1-1 uk-width-1-3@m">
+                        {% include "partials/blog-more-articles.partial.njk" %}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        {# Footer #}
+        {% include "partials/footer.partial.njk" %}
+
+        {# Modal #}
+        {% include "partials/get_started_modal.partial.njk" %}
+
+    </div>
+
+{% endblock %}

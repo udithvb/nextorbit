@@ -1,0 +1,23 @@
+<!--
+    Comments
+    src/views/templates/partials/blog-comments.partial.njk
+-->
+<div class="uk-margin-top uk-margin-bottom-large">
+
+    <h3 class="widget-title">Comments</h3>
+
+    <hr class="uk-margin-small-vertical">
+
+    <ul class="uk-list uk-list-divider comments">
+
+        {% for i in range(0,5) %}
+            <li>
+                {{blog.comment(
+                    'John Doe',
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates modi asperiores obcaecati illum ab debitis nihil possimus quas ullam a?',
+                    data.assets.images + '/avatar.png'
+                )}}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

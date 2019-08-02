@@ -68,3 +68,15 @@
         <div class="article-date">{{date}}</div>
     </div>
 {% endmacro %}
+
+{% macro comment(author, text, image) %}
+    <div class="uk-grid-medium comment" uk-grid>
+        <div class="uk-width-auto">
+            <img class="uk-border-circle" width="40" height="40" src="{{image}}" alt="{{author}}">
+        </div>
+        <div class="uk-width-expand">
+            <div class="author-name">{{author}}</div>
+            <div class="comment-text uk-text-small uk-text-justify">{{text}}</div>
+        </div>
+    </div>
+{% endmacro %}
