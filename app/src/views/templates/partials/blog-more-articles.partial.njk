@@ -1,0 +1,16 @@
+<!--
+    Articles List
+    src/views/templates/partials/blog-more-articles.partial.njk
+-->
+<h2 class="widget-title uk-margin-remove-top">More Articles</h2>
+
+<div class="article-list">
+
+    {% for i in range(0,4) %}
+        {{blog.article_item(
+            'Why a strong work culture is oxygen for growth.',
+            '10 July 2019'
+        )}}
+    {% endfor %}
+
+</div>

@@ -1,0 +1,20 @@
+<!--
+    Articles List
+    src/views/templates/partials/blog-articles-list.partial.njk
+-->
+<ul class="uk-list uk-list-divider">
+
+    {% for i in range(0,4) %}
+        <li>
+            {{blog.article_thumb_large(
+                'Why a strong work culture is oxygen for growth.',
+                'Opportunity of 11% in the men’s category at a leading fashion retailer.',
+                '#',
+                'Kishore Rajgopal',
+                'Jul 18',
+                data.assets.images + '/slideshow/image (1).png'
+            )}}
+        </li>
+    {% endfor %}
+
+</ul>

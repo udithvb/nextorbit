@@ -33,6 +33,10 @@
     font-size: 0.75rem;
 }
 
+.text-upper {
+    text-transform: uppercase;
+}
+
 .raised {
     @include raised();
 }
@@ -580,5 +584,124 @@
 
     .border-#{$key} {
         border: $global-border-width solid $color;
+    }
+}
+
+// BLOG
+
+.widget-title {
+    color: $gray;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.article {
+
+    .article-img {
+        width: 100%;
+    }
+
+    .article-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0.5rem 0;
+    }
+
+    .article-summary {
+        margin: 0;
+        text-align: justify;
+        font-size: 0.8125rem;
+    }
+
+    .article-meta {
+        font-size: 0.75rem;
+    }
+
+    .article-actions {
+        font-size: 0.6875rem;
+        font-weight: 600;
+    }
+}
+
+.article-thumb-list {
+    display: flex;
+
+}
+
+.article-thumb {
+
+    .article-img {
+        // height: 100%;
+        object-fit: cover;
+    }
+
+    .article-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .article-meta {
+        font-size: 0.75rem;
+    }
+}
+
+.article-thumb-large {
+
+    @media screen and (min-width: $breakpoint-medium) {
+
+        min-height: 150px;
+    }
+
+    .article-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+
+        @media screen and (min-width: $breakpoint-medium) {
+
+            font-size: 1.375rem;
+        }
+    }
+
+    .article-img {
+        // height: 100%;
+        object-fit: cover;
+    }
+
+    .article-summary {
+        margin: 0.5rem 0;
+        text-align: justify;
+        font-size: 0.8125rem;
+    }
+
+    .article-meta {
+        font-size: 0.75rem;
+    }
+}
+
+.article-list {
+
+    .article-item {
+
+        .article-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+    
+            @media screen and (min-width: $breakpoint-medium) {
+    
+                font-size: 1.25rem;
+            }
+        }
+
+        &:not(:last-child)::after {
+            content: '';
+            display: block;
+            margin: 1rem 0;
+            width: 20%;
+            height: 4px;
+            background: $muted;
+        }
     }
 }

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="AI-enabled Demand Predictions and Adaptive pricing">
+    <meta name="keywords" content="tracing paper, jigsaw,design,logo,print,graphic,web design,web development">
+    <!-- Open Graph -->
+    <meta property="og:title" content="NextOrbit">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="http://nextorbit.netlify.com">
+    <meta name="og:image" content="/assets/images/logo.svg">
+
+    <!-- Recommended -->
+    <meta property="og:site_name" content="NextOrbit">
+    <meta name="twitter:image:alt" content="NextOrbit">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <title>NextOrbit</title>
+
+    <!-- FontAwesom -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    
+
+    <div id="bodyWrapper">
+
+        
+        <!-- This is the off-canvas -->
+<div id="hamburger-menu" uk-offcanvas>
+    <div class="uk-offcanvas-bar uk-padding-remove">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-list uk-list-clickable" uk-scrollspy-nav="closest: li; scroll: true;  offset: 80;">
+            <li>
+    <a href="http://nextorbit.netlify.com#about">About</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#features">Features</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#benefits">Benefits</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#how_it_works">How It Works</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#what_we_solve">What We Solve</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#team">Team</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com/blog.html">Blog</a>
+</li>
+        </ul>
+
+    </div>
+</div>
+
+        
+        
+        
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" id="navbar">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-navbar-fixed" uk-navbar="mode: click">
+
+        <!-- Mobile Part -->
+        <div class="uk-navbar-left uk-hidden@m">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #hamburger-menu"></a>
+            </div>
+
+        </div>
+
+        
+        <div class="uk-navbar-right uk-hidden@m">
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-padding-remove">
+                <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
+            </a>
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-logo">
+                NextOrbit
+            </a>
+        </div>
+        <!-- [x] Mobile Part -->
+
+        <!-- Desktop Part -->
+
+        <div class="uk-navbar-left uk-visible@m">
+
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-padding-remove uk-visible@m">
+                <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
+            </a>
+            <a href="http://nextorbit.netlify.com" class="uk-navbar-item uk-logo">
+                NextOrbit
+            </a>
+
+        </div>
+
+        <div class="uk-navbar-right uk-visible@m">
+
+            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 80;" uk-scrollspy="target: > li; cls: uk-animation-slide-top-small; delay: 100">
+                <li>
+    <a href="http://nextorbit.netlify.com#about">About</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#features">Features</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#benefits">Benefits</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#how_it_works">How It Works</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#what_we_solve">What We Solve</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com#team">Team</a>
+</li>
+<li>
+    <a href="http://nextorbit.netlify.com/blog.html">Blog</a>
+</li>
+            </ul>
+
+            <div class="uk-navbar-item" uk-scrollspy="target: > button; cls: uk-animation-slide-right-small; delay: 500">
+                <button class="uk-button uk-button-gradient-outline" uk-toggle="target: #request-demo-modal">
+                    Contact Us
+                </button>
+            </div>
+            
+        </div>
+        <!-- [x] Desktop Part -->
+
+    </nav>
+</div>
+
+        
+        
+
+        <div class="uk-section uk-section-default uk-padding-remove">
+            <ul class="uk-container">
+                <h1 class="uk-heading-xsmall uk-text-bold">Blog</h1>
+                
+                <!--
+    New Articles
+    src/views/templates/partials/blog-new-articles.partial.njk
+-->
+<h2 class="widget-title text-upper uk-margin-remove-top">New Article</h2>
+<div class="uk-margin-bottom">
+    <div class="uk-grid-medium" uk-grid>
+        <div class="uk-width-1-1 uk-width-1-3@m">
+            
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article
+    -->
+    <div class="article">
+        <img src="assets/images/slideshow/image (1).png" alt="NextOrbit discovered a sales improvement." class="article-img">
+        <div class="article-body">
+            <h3 class="article-title">NextOrbit discovered a sales improvement.</h3>
+            <p class="article-summary text-light">Opportunity of 11% in the men’s category at a leading fashion retailer.</p>
+            <div class="article-actions uk-text-right">
+                <a href="#">Read More</a>
+            </div>
+            <div class="article-meta">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div class="uk-width-1-1 uk-width-1-3@m uk-flex uk-flex-column uk-flex-between">
+            
+                
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article_thumb
+    -->
+    <div class="uk-grid-small article-thumb" uk-grid>
+        <div class="uk-width-1-3 uk-flex">
+            <img src="assets/images/slideshow/image (1).png" alt="Why a strong work culture is oxygen for growth." class="article-img">
+        </div>
+        <div class="uk-width-2-3">
+            <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+            <div class="article-meta">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+            </div>
+        </div>
+    </div>
+
+            
+                
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article_thumb
+    -->
+    <div class="uk-grid-small article-thumb" uk-grid>
+        <div class="uk-width-1-3 uk-flex">
+            <img src="assets/images/slideshow/image (1).png" alt="Why a strong work culture is oxygen for growth." class="article-img">
+        </div>
+        <div class="uk-width-2-3">
+            <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+            <div class="article-meta">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+            </div>
+        </div>
+    </div>
+
+            
+                
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article_thumb
+    -->
+    <div class="uk-grid-small article-thumb" uk-grid>
+        <div class="uk-width-1-3 uk-flex">
+            <img src="assets/images/slideshow/image (1).png" alt="Why a strong work culture is oxygen for growth." class="article-img">
+        </div>
+        <div class="uk-width-2-3">
+            <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+            <div class="article-meta">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+            </div>
+        </div>
+    </div>
+
+            
+        </div>
+        <div class="uk-width-1-1 uk-width-1-3@m">
+            
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article
+    -->
+    <div class="article">
+        <img src="assets/images/slideshow/image (1).png" alt="NextOrbit discovered a sales improvement." class="article-img">
+        <div class="article-body">
+            <h3 class="article-title">NextOrbit discovered a sales improvement.</h3>
+            <p class="article-summary text-light">Opportunity of 11% in the men’s category at a leading fashion retailer.</p>
+            <div class="article-actions uk-text-right">
+                <a href="#">Read More</a>
+            </div>
+            <div class="article-meta">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
+<!--
+    [x] New Article
+-->
+
+                <hr class="uk-margin-vertical">
+
+                <div class="uk-margin-large-bottom">
+                    <div class="uk-grid-large" uk-grid>
+
+                        <div class="uk-width-1-1 uk-width-2-3@m">
+                            <!--
+    Articles List
+    src/views/templates/partials/blog-articles-list.partial.njk
+-->
+<ul class="uk-list uk-list-divider">
+
+    
+        <li>
+            
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article_thumb_large
+    -->
+    <div class="uk-grid-medium article-thumb-large" uk-grid>
+        <div class="uk-width-1-4 uk-flex">
+            <img src="assets/images/slideshow/image (1).png" alt="Why a strong work culture is oxygen for growth." class="article-img">
+        </div>
+        <div class="uk-width-expand uk-flex uk-flex-column">
+            <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+            <p class="article-summary text-light">Opportunity of 11% in the men’s category at a leading fashion retailer.</p>
+            <div class="article-meta uk-margin-auto-top uk-flex">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+
+                <span class="uk-margin-auto-left article-actions">
+                    <a href="#">Read More</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+        </li>
+    
+        <li>
+            
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article_thumb_large
+    -->
+    <div class="uk-grid-medium article-thumb-large" uk-grid>
+        <div class="uk-width-1-4 uk-flex">
+            <img src="assets/images/slideshow/image (1).png" alt="Why a strong work culture is oxygen for growth." class="article-img">
+        </div>
+        <div class="uk-width-expand uk-flex uk-flex-column">
+            <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+            <p class="article-summary text-light">Opportunity of 11% in the men’s category at a leading fashion retailer.</p>
+            <div class="article-meta uk-margin-auto-top uk-flex">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+
+                <span class="uk-margin-auto-left article-actions">
+                    <a href="#">Read More</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+        </li>
+    
+        <li>
+            
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article_thumb_large
+    -->
+    <div class="uk-grid-medium article-thumb-large" uk-grid>
+        <div class="uk-width-1-4 uk-flex">
+            <img src="assets/images/slideshow/image (1).png" alt="Why a strong work culture is oxygen for growth." class="article-img">
+        </div>
+        <div class="uk-width-expand uk-flex uk-flex-column">
+            <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+            <p class="article-summary text-light">Opportunity of 11% in the men’s category at a leading fashion retailer.</p>
+            <div class="article-meta uk-margin-auto-top uk-flex">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+
+                <span class="uk-margin-auto-left article-actions">
+                    <a href="#">Read More</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+        </li>
+    
+        <li>
+            
+    <!--
+        Article
+        src/views/templates/macros/blog.macro.njk -> article_thumb_large
+    -->
+    <div class="uk-grid-medium article-thumb-large" uk-grid>
+        <div class="uk-width-1-4 uk-flex">
+            <img src="assets/images/slideshow/image (1).png" alt="Why a strong work culture is oxygen for growth." class="article-img">
+        </div>
+        <div class="uk-width-expand uk-flex uk-flex-column">
+            <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+            <p class="article-summary text-light">Opportunity of 11% in the men’s category at a leading fashion retailer.</p>
+            <div class="article-meta uk-margin-auto-top uk-flex">
+                <span class="uk-text-bold uk-margin-small-right">Kishore Rajgopal</span>
+                <span class="text-light">Jul 18</span>
+
+                <span class="uk-margin-auto-left article-actions">
+                    <a href="#">Read More</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+        </li>
+    
+
+</ul>
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-1-3@m">
+                            <!--
+    Articles List
+    src/views/templates/partials/blog-more-articles.partial.njk
+-->
+<h2 class="widget-title uk-margin-remove-top">More Articles</h2>
+
+<div class="article-list">
+
+    
+        
+    <div class="article-item">
+        <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+        <div class="article-date">10 July 2019</div>
+    </div>
+
+    
+        
+    <div class="article-item">
+        <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+        <div class="article-date">10 July 2019</div>
+    </div>
+
+    
+        
+    <div class="article-item">
+        <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+        <div class="article-date">10 July 2019</div>
+    </div>
+
+    
+        
+    <div class="article-item">
+        <h3 class="article-title">Why a strong work culture is oxygen for growth.</h3>
+        <div class="article-date">10 July 2019</div>
+    </div>
+
+    
+
+</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="uk-section uk-section-secondary uk-padding-remove" id="footer">
+    <div class="uk-container uk-margin-top">
+        <div class="uk-grid-medium" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay:150; repeat: true">
+
+            <div class="uk-width-1-1 uk-width-1-4@m uk-hidden@m">
+                <a class="uk-logo uk-height-1-1 uk-flex uk-flex-middle" href="http://nextorbit.netlify.com">
+                    <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
+                    <span class="text-light uk-margin-small-left">NextOrbit</span>
+                </a>
+            </div>
+
+            <div class="uk-width-1-2 uk-width-1-4@m">
+                <a class="uk-logo uk-flex uk-flex-middle uk-visible@m uk-margin-bottom" href="http://nextorbit.netlify.com">
+                    <img src="/assets/images/logo.svg" alt="NextOrbit" width="32px" uk-img>
+                    <span class="text-light uk-margin-small-left">NextOrbit</span>
+                </a>
+
+                <div id="footer-address" class="text-xsmall">
+                    <div class="text-bold">Address:</div>
+                    <div class="text-light">
+                        <b>Texas</b> - 4512 Legacy Drive, Suite 100, Plano, TX 75024
+                    </div>
+                    <div class="text-light uk-margin-top">
+                        <b>New York</b> - 4512 Legacy Drive, Suite 100, Plano, TX 75024
+                    </div>
+                    <div class="text-light uk-margin-top">
+                        <b>Bangalore</b> - 2nd Floor, Salarpuria Tower -1,  No. 22, Industrial Layout, 7th Block, Koramangala, Bengaluru, Karnataka 560095
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="uk-width-1-2 uk-width-1-4@m uk-flex-last@m">
+                <h5 class="text-light uk-margin-small-bottom">Articles & Blogs</h5>
+                <ul class="uk-list uk-list-divider text-xsmall">
+                    <li><a href="#">Retailing to E-tailing: In search for a symbiotic relationship</a></li>
+                    <li><a href="#">Impact of out-of-stocks on sales and customer satisfaction</a></li>
+                    <li><a href="#">Improvement in customer experience, in-stock position using AI...</a></li>
+                </ul>
+                <div class="uk-text-right uk-text-small">
+                    <a href="#" style="font-size:0.625rem">View All</a>
+                </div>
+            </div>
+
+            <div class="uk-width-1-2 uk-width-1-4@m uk-visible@m">
+                <h5 class="text-light uk-margin-small-bottom">Other links</h5>
+                <ul class="uk-nav uk-nav-default footer-nav uk-text-small">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+
+            <div class="uk-width-1-1 uk-width-1-4@m uk-flex-last@m">
+                <h5 class="text-light uk-margin-small-bottom">Sign Up For Our Newsletter</h5>
+                
+                <form action="#YOUR_NEWSLETTER_ACTION" class="newsletter-form desktop" class="uk-margin-top">
+                    <div class="newsletter-form-group">
+                        <input type="text" class="uk-input" name="email" placeholder="Email Address">
+                        <button type="submit" class="uk-button uk-button-inverse uk-button-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="uk-padding-small uk-margin-top uk-hidden@m">
+            <ul class="footer-links">
+                <li><a href="http://nextorbit.netlify.com/blog.html">Blog</a></li>
+                <li><a href="#YOUR_TERMS_LINK">Terms of Use</a></li>
+                <li><a href="#YOUR_ACCESSIBILITY_LINK">Accessibility</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-section uk-padding-small uk-text-center">
+        <div class="text-medium">&copy; 2019 NextOrbit</div>
+    </div>
+</div>
+
+        
+        
+
+<div id="request-demo-modal" uk-modal>
+
+    <div class="uk-modal-dialog uk-width-1-1 uk-width-3-5@m uk-modal-body">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <h2 class="uk-heading-xsmall uk-text-center uk-margin-remove-bottom">Get Started</h2>
+
+        
+
+        <form action="#YOUR_GET_STARTED_ACTION" method="post" class="uk-padding-small" id="request-demo-form">
+            <div class="uk-grid-medium" uk-grid>
+                
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Pain Problems to Solve</h3>
+                    <div class="uk-text-small uk-text-light">Select 3 problems</div>
+                    <div class="uk-margin-small-top">
+                        
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="over_stock" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Over Stock 
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="product_expiration" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Product Expiration
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="out_of_stock" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Out of Stock 
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="innefficiant_planning_for_growth_opportunities" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Innefficiant planning for growth opportunities
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="leaving_money_on_the_table_due_to_improper_markdown" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Leaving money on the table Due to Improper Markdown
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="cant_figure_out_latent_demand" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Cant Figure out latent Demand
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="what_more_merchandise_could_sell" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            What more merchandise could sell
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="food_wastage" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Food Wastage
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="not_responding_speedily_to_fashion_trends" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Not Responding Speedily to fashion Trends
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="pain_problem_to_solve[]" value="over_exposure_to_competitor_pricing" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Over Exposure to Competitor Pricing
+        </div>
+    </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <h3 class="uk-text-bold uk-margin-small-bottom" style="font-size:20px">Benefit Expected</h3>
+                    <div class="uk-text-small uk-text-light">Select Top one or two</div>
+                    <div class="uk-margin-small-top">
+                        
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="benefit_expected[]" value="better_full_price_sell_through_less_discounting" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Better Full Price sell through (Less Discounting) 
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="benefit_expected[]" value="higher_osa_on_shelf_availability" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher OSA (on shelf Availability)
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="benefit_expected[]" value="higher_inventory_turns" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher Inventory Turns
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="benefit_expected[]" value="lower_store_or_dc_inventory" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Lower Store or DC inventory
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="benefit_expected[]" value="higher_basket_sizes" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher Basket Sizes
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="benefit_expected[]" value="higher_customer_loyality_more_repeat_visits" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            Higher Customer Loyality (More Repeat visits)
+        </div>
+    </div>
+
+                        
+                            
+    <div class="custom-checkbox uk-margin-small-top">
+        <input type="checkbox" name="benefit_expected[]" value="more_effective_planning" >
+        <div class="uk-flex uk-flex-middle uk-text-small">
+            <span class="icon uk-margin-small-right">
+                <i class=" far  fa-circle"></i>
+            </span>
+            More Effective Planning
+        </div>
+    </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid-medium uk-margin-small" uk-grid>
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <div class="uk-margin-small form-input" data-label="Name">
+                        <input type="text" name="name" id="name" class="uk-input">
+                    </div>
+                    <div class="uk-margin-small form-input" data-label="Email Address">
+                        <input type="email" name="email" id="email" class="uk-input">
+                    </div>
+                    <div class="uk-margin-small form-input" data-label="Organisation">
+                        <input type="text" name="organisation" id="organisation" class="uk-input">
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <div class="uk-margin-small form-textarea uk-height-1-1" data-label="Message (Optional)">
+                        <textarea name="message" id="message" rows=4 class="uk-textarea uk-height-1-1"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-top uk-text-center uk-text-right@m">
+                <button class="uk-button uk-button-primary" name="submit" value="Submit" type="submit">Submit</button>
+            </div>
+        </form>
+    
+    </div>
+</div>
+
+    </div>
+
+
+    
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+
+    
+</body>
+</html>

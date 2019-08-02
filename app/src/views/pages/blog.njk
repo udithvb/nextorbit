@@ -1,0 +1,49 @@
+{% extends "layouts/app.layout.njk" %}
+
+{% block content %}
+
+    <div id="bodyWrapper">
+
+        {# Hamburger #}
+        {% include "partials/hamburger-menu.partial.njk" %}
+
+        {# Navbar #}
+        {% import "macros/navbar.macro.njk" as navbar %}
+        {{ navbar.nav(app, 'home') }}
+
+        {# Blog macros #}
+        {% import "macros/blog.macro.njk" as blog %}
+
+        <div class="uk-section uk-section-default uk-padding-remove">
+            <ul class="uk-container">
+                <h1 class="uk-heading-xsmall uk-text-bold">Blog</h1>
+                
+                {% include "partials/blog-new-articles.partial.njk" %}
+
+                <hr class="uk-margin-vertical">
+
+                <div class="uk-margin-large-bottom">
+                    <div class="uk-grid-large" uk-grid>
+
+                        <div class="uk-width-1-1 uk-width-2-3@m">
+                            {% include "partials/blog-articles-list.partial.njk" %}
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-1-3@m">
+                            {% include "partials/blog-more-articles.partial.njk" %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# Footer #}
+        {% include "partials/footer.partial.njk" %}
+
+        {# Modal #}
+        {% include "partials/get_started_modal.partial.njk" %}
+
+    </div>
+
+{% endblock %}

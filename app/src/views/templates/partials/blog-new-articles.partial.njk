@@ -1,0 +1,42 @@
+<!--
+    New Articles
+    src/views/templates/partials/blog-new-articles.partial.njk
+-->
+<h2 class="widget-title text-upper uk-margin-remove-top">New Article</h2>
+<div class="uk-margin-bottom">
+    <div class="uk-grid-medium" uk-grid>
+        <div class="uk-width-1-1 uk-width-1-3@m">
+            {{blog.article(
+                'NextOrbit discovered a sales improvement.',
+                'Opportunity of 11% in the men’s category at a leading fashion retailer.',
+                '#',
+                'Kishore Rajgopal',
+                'Jul 18',
+                data.assets.images + '/slideshow/image (1).png'
+            )}}
+        </div>
+        <div class="uk-width-1-1 uk-width-1-3@m uk-flex uk-flex-column uk-flex-between">
+            {% for i in range(0,3) %}
+                {{blog.article_thumb(
+                    'Why a strong work culture is oxygen for growth.',
+                    'Kishore Rajgopal',
+                    'Jul 18',
+                    data.assets.images + '/slideshow/image (1).png'
+                )}}
+            {% endfor %}
+        </div>
+        <div class="uk-width-1-1 uk-width-1-3@m">
+            {{blog.article(
+                'NextOrbit discovered a sales improvement.',
+                'Opportunity of 11% in the men’s category at a leading fashion retailer.',
+                '#',
+                'Kishore Rajgopal',
+                'Jul 18',
+                data.assets.images + '/slideshow/image (1).png'
+            )}}
+        </div>
+    </div>
+</div>
+<!--
+    [x] New Article
+-->

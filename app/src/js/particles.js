@@ -112,7 +112,8 @@ const config = {
 };
 
 // particles
-try {
+function showParticles() {
+  try {
 
     const blob = new Blob([JSON.stringify(config)], {type: 'application/json'})
 
@@ -127,6 +128,7 @@ try {
             window.URL.revokeObjectURL(url)
         }
     );
-} catch (err) {
-    console.warn(err);
+  } catch (err) {
+      console.warn(err);
+  }
 }
