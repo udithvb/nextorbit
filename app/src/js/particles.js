@@ -112,23 +112,23 @@ const config = {
 };
 
 // particles
-function showParticles() {
-  try {
 
-    const blob = new Blob([JSON.stringify(config)], {type: 'application/json'})
+try {
 
-    const url = window.URL.createObjectURL(blob)
+  const blob = new Blob([JSON.stringify(config)], {type: 'application/json'})
 
-    particlesJS.load(
-        "particles",
-        url,
-        () => {
-            console.log("particle,js config loaded");
+  const url = window.URL.createObjectURL(blob)
 
-            window.URL.revokeObjectURL(url)
-        }
-    );
-  } catch (err) {
-      console.warn(err);
-  }
+  particlesJS.load(
+      "particles",
+      url,
+      () => {
+          console.log("particle,js config loaded");
+
+          window.URL.revokeObjectURL(url)
+      }
+  );
+} catch (err) {
+    console.warn(err);
 }
+
